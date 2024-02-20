@@ -1,3 +1,3 @@
-phrases = [
-    "",
+phrase = [
+    "Jeg er en taberabe",
 ]
