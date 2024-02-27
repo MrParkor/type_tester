@@ -25,7 +25,7 @@ def StartTime():
 def EndTime():
     time.time()
 
-try:
+try: # Make the Users Folder if it doesn't exist
     os.mkdir(CreateUserDir)
 except:
     pass
