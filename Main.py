@@ -52,6 +52,16 @@ def Login():
 
 
 def main():
+    Login_Signup = input("Do you want to log in (L) or sign up (S)?\n")
+
+    if Login_Signup.lower() == "l":
+        Login()
+    elif Login_Signup.lower() == "s":
+        SignUp()
+    else:
+        print(f"Something went wrong, try again")
+        main()
+
     print("Please enter this phrase as fast as you can:\n")
     PhraseSplit(PhraseType, LetterPhraseSplitted)
     time.sleep(1)
@@ -61,4 +71,4 @@ def main():
     EndTime()
     PhraseSplit(UserInput, UserPhrase)
 
-Login()
+main()
