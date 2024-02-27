@@ -8,6 +8,7 @@ now = datetime.datetime.now()
 CurrentDateTime = now.strftime("%d/%m/%Y %H:%M:%S")
 
 CurrentDirectory = os.getcwd()
+CreateUserDir = os.path.join(CurrentDirectory, "Users")
 UsersDirectory = f"{CurrentDirectory}/Users"
 OSUserDirectory = os.path.join(UsersDirectory)
 
@@ -24,7 +25,10 @@ def StartTime():
 def EndTime():
     time.time()
 
-os.mkdir
+try:
+    os.mkdir(CreateUserDir)
+except:
+    pass
 
 def SignUp():
     UserName = input("Please enter your Username: ")
