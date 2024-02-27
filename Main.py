@@ -7,7 +7,6 @@ import os
 now = datetime.datetime.now()
 CurrentDateTime = now.strftime("%d/%m/%Y %H:%M:%S")
 
-
 CurrentDirectory = os.getcwd()
 UsersDirectory = f"{CurrentDirectory}/Users"
 OSUserDirectory = os.path.join(UsersDirectory)
@@ -18,8 +17,6 @@ UserPhrase = []
 def PhraseSplit(SplittingPhrase, List):
     for Letter in SplittingPhrase:
         List.append(Letter)
-
-# print(LetterPhraseSplitted)
 
 def StartTime():
     time.time()
@@ -51,7 +48,7 @@ def Login():
         Login()
 
 
-def main():
+def LoginSignupChoise():
     Login_Signup = input("Do you want to log in (L) or sign up (S)?\n")
 
     if Login_Signup.lower() == "l":
@@ -60,11 +57,14 @@ def main():
         SignUp()
     else:
         print(f"Something went wrong, try again")
-        main()
+        LoginSignupChoise()
 
+
+def main():
+    LoginSignupChoise()
     print("Please enter this phrase as fast as you can:\n")
     PhraseSplit(PhraseType, LetterPhraseSplitted)
-    time.sleep(1)
+    time.sleep(3)
     print(PhraseType)
     StartTime()
     UserInput = input()
