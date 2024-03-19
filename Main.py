@@ -23,11 +23,11 @@ def PhraseSplit(SplittingPhrase, List):
     for Letter in SplittingPhrase:
         List.append(Letter)
 
-def StartTime():
-    time.time()
+def TimerStart():
+    return time.time()
 
-def EndTime():
-    time.time()
+def TimerEnd():
+    return time.time()
 
 def MakeStartUserDir():
     try: # Make the Users Folder if it doesn't exist
@@ -50,7 +50,7 @@ def Login():
     try:
         os.mkdir(UserDir)
     except: # If successful login
-        input("Test")
+        print("Success")
     else:
         print("User doesn't exist... Try again\n")
         os.rmdir(UserDir)
@@ -69,17 +69,27 @@ def LoginSignupChoise():
         LoginSignupChoise()
 
 
+def SetTime(StartTime, EndTime):
+    return int(EndTime - StartTime)
+
+
 def main():
     MakeStartUserDir()
     LoginSignupChoise()
+
     print("Please enter this phrase as fast as you can:\n")
     PhraseSplit(PhraseType, LetterPhraseSplitted)
-    time.sleep(3)
-    print(PhraseType)
-    StartTime()
+    print(PhraseType,"\n")
+
+    StartTime = TimerStart()
     UserInput = input()
-    EndTime()
+    EndTime = TimerEnd()
+    print(f"Your Time was: {SetTime(StartTime, EndTime)} secs")
+
     PhraseSplit(UserInput, UserPhrase)
+
+
+
 
 if __name__ == "__main__":
     main()
