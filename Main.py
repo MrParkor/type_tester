@@ -4,6 +4,8 @@ import time
 import datetime
 import os
 
+
+# Variables
 now = datetime.datetime.now()
 CurrentDateTime = now.strftime("%d/%m/%Y %H:%M:%S")
 
@@ -15,6 +17,8 @@ OSUserDirectory = os.path.join(UsersDirectory)
 PhraseType = phrase[randint(0,len(phrase)-1)]
 LetterPhraseSplitted = []
 UserPhrase = []
+
+# Functions
 def PhraseSplit(SplittingPhrase, List):
     for Letter in SplittingPhrase:
         List.append(Letter)
@@ -25,10 +29,11 @@ def StartTime():
 def EndTime():
     time.time()
 
-try: # Make the Users Folder if it doesn't exist
-    os.mkdir(CreateUserDir)
-except:
-    pass
+def MakeStartUserDir():
+    try: # Make the Users Folder if it doesn't exist
+        os.mkdir(CreateUserDir)
+    except:
+        pass
 
 def SignUp():
     UserName = input("Please enter your Username: ")
@@ -65,6 +70,7 @@ def LoginSignupChoise():
 
 
 def main():
+    MakeStartUserDir()
     LoginSignupChoise()
     print("Please enter this phrase as fast as you can:\n")
     PhraseSplit(PhraseType, LetterPhraseSplitted)
