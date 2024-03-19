@@ -16,11 +16,87 @@ CreateUserDir = os.path.join(CurrentDirectory, "Users")
 UsersDirectory = f"{CurrentDirectory}/Users"
 OSUserDirectory = os.path.join(UsersDirectory)
 
-PhraseType = phrase[randint(0,len(phrase)-1)]
+TestPhraseType = TestPhrase[randint(0,len(TestPhrase)-1)]
 MainPhraseSplitted = []
 UserPhraseSplitted = []
 
-# Functions
+# Classes
+
+class Parrent():
+    def __init__(self):
+        MakeStartUserDir()
+        LoginSignupChoise()
+
+        print("Please enter this phrase as fast as you can:\n")
+
+
+class Beginner(Parrent):
+    def __init__(self):
+        super().__init__()
+        
+        Phrase = BeginnerPhrase[randint(0,len(BeginnerPhrase)-1)]
+
+        PhraseSplit(Phrase, MainPhraseSplitted)
+        print(MainPhraseSplitted,"\n")
+
+        StartTime = TimerStart()
+        UserInput = input()
+        EndTime = TimerEnd()
+        Time = SetTime(StartTime, EndTime)
+
+        Checker(UserPhraseSplitted, MainPhraseSplitted)
+
+        PhraseSplit(UserInput, UserPhraseSplitted)
+        Accuracy()
+
+        WriteTime(Time, AccuracyPercent, __class__.__name__)
+        print(Time)
+
+class Intermidiate(Parrent):
+    def __init__(self):
+        super().__init__()
+        
+        Phrase = IntiermidiatePhrase[randint(0,len(IntiermidiatePhrase)-1)]
+
+        PhraseSplit(Phrase, MainPhraseSplitted)
+        print(MainPhraseSplitted,"\n")
+
+        StartTime = TimerStart()
+        UserInput = input()
+        EndTime = TimerEnd()
+        Time = SetTime(StartTime, EndTime)
+
+        Checker(UserPhraseSplitted, MainPhraseSplitted)
+
+        PhraseSplit(UserInput, UserPhraseSplitted)
+        Accuracy()
+
+        WriteTime(Time, AccuracyPercent, __class__.__name__)
+        print(Time)
+
+class Expert(Parrent):
+    def __init__(self):
+        super().__init__()
+        
+        Phrase = ExpertPhrase[randint(0,len(ExpertPhrase)-1)]
+
+        PhraseSplit(Phrase, MainPhraseSplitted)
+        print(MainPhraseSplitted,"\n")
+
+        StartTime = TimerStart()
+        UserInput = input()
+        EndTime = TimerEnd()
+        Time = SetTime(StartTime, EndTime)
+
+        Checker(UserPhraseSplitted, MainPhraseSplitted)
+
+        PhraseSplit(UserInput, UserPhraseSplitted)
+        Accuracy()
+
+        WriteTime(Time, AccuracyPercent, __class__.__name__)
+        print(Time)
+
+
 def PhraseSplit(SplittingPhrase, List):
     for Letter in SplittingPhrase:
         List.append(Letter)
@@ -73,15 +149,16 @@ def LoginSignupChoise():
 
 
 def SetTime(StartTime, EndTime):
-    int(EndTime - StartTime)
+    return int(EndTime - StartTime)
 
 
-def AddTime(time, accuracy = 0):
+def WriteTime(time, accuracy, difficulty):
     Directory = f"{os.getcwd()}/Users/{CurrentUser}"
     Place = os.path.join(Directory, f"{CurrentDate} {CurrentTime}.txt")
     with open(Place, "w") as File:
         File.write(f"Date: {CurrentDate}\n")
         File.write(f"Clock Time: {CurrentTime}\n")
+        File.write(f"Difficulty: {difficulty}\n")
         File.write(f"Your Time: {time} secs \n")
         File.write(f"Your accuracy: {accuracy}%\n")
 
@@ -106,26 +183,16 @@ def Accuracy():
     else:
         AccuracyPercent = 0
 
-def Main():
-    MakeStartUserDir()
-    LoginSignupChoise()
+def ChooseDifficulty():
+    Difficulty = input("Please enter you disired difficulty:\nBeginner (B)\nIntermidiate (I)\nExpert (E)\n").lower()
+    if Difficulty == "b":
+        Beginner()
+    elif Difficulty == "i":
+        Intermidiate()
+    elif Difficulty == "e":
+        Expert()
+    else:
+        print("didn't understand: Please try again")
+        ChooseDifficulty()
 
-    print("Please enter this phrase as fast as you can:\n")
-    PhraseSplit(PhraseType, MainPhraseSplitted)
-    print(PhraseType,"\n")
-
-    StartTime = TimerStart()
-    UserInput = input()
-    EndTime = TimerEnd()
-    Time = SetTime(StartTime, EndTime)
-
-    PhraseSplit(UserInput, UserPhraseSplitted)
-    Accuracy()
-
-    AddTime(Time, AccuracyPercent)
-
-
-
-
-if __name__ == "__main__":
-    Main()
+ChooseDifficulty()
