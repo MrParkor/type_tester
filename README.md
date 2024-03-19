@@ -1,8 +1,3 @@
-
- 
-Main	index
-s:\mark\programmering\projects\school\eksamen\type_tester\main.py
- 
 Modules
       	 	
 datetime
