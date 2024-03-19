@@ -75,4 +75,5 @@ def main():
     EndTime()
     PhraseSplit(UserInput, UserPhrase)
 
-main()
+if __name__ == "__main__":
+    main()
