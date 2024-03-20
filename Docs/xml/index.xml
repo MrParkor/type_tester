@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.10.0" xml:lang="en-US">
+  <compound refid="d2/d0b/class_main_1_1_beginner" kind="class"><name>Main::Beginner</name>
+    <member refid="d2/d0b/class_main_1_1_beginner_1a27cd5307b220e55ffba9fa4841ad8b4b" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="d3/d1d/class_main_1_1_expert" kind="class"><name>Main::Expert</name>
+    <member refid="d3/d1d/class_main_1_1_expert_1ac75b8e039a48ae806574ed64c7670498" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="da/d02/class_main_1_1_intermidiate" kind="class"><name>Main::Intermidiate</name>
+    <member refid="da/d02/class_main_1_1_intermidiate_1a44a353367883c6128f03a016a87f36e3" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="db/d1f/class_main_1_1_parrent" kind="class"><name>Main::Parrent</name>
+    <member refid="db/d1f/class_main_1_1_parrent_1a0d4f0b11961e6fba99cf118fd1207fbd" kind="function"><name>__init__</name></member>
+  </compound>
+  <compound refid="dc/d09/namespace_main" kind="namespace"><name>Main</name>
+    <member refid="dc/d09/namespace_main_1afb87e9c2cd127261c128cd6522c8613c" kind="variable"><name>now</name></member>
+    <member refid="dc/d09/namespace_main_1a4e23762ea59613a42985604a0cedbd86" kind="variable"><name>CurrentDate</name></member>
+    <member refid="dc/d09/namespace_main_1a8689c769cd84287a04dc7c8d27774f9e" kind="variable"><name>CurrentTime</name></member>
+    <member refid="dc/d09/namespace_main_1a130601c3bd8356a1a32d413cd468a2c7" kind="variable"><name>CurrentDirectory</name></member>
+    <member refid="dc/d09/namespace_main_1afdeb3521e270ae29c9d7a67f1e8d8691" kind="variable"><name>CreateUserDir</name></member>
+    <member refid="dc/d09/namespace_main_1aadca5f678e366137bdf1fedbb6cc58ad" kind="variable"><name>UsersDirectory</name></member>
+    <member refid="dc/d09/namespace_main_1ad2eac4f47d5a5b9d2402584bc7291c4e" kind="variable"><name>OSUserDirectory</name></member>
+    <member refid="dc/d09/namespace_main_1ac8f9d70642442b220e9d42af4be6268d" kind="variable"><name>TestPhraseType</name></member>
+    <member refid="dc/d09/namespace_main_1ae47844a282521a252f4a2b31eb88e52c" kind="variable"><name>MainPhraseSplitted</name></member>
+    <member refid="dc/d09/namespace_main_1a754949a4060496aabeadc57c09b5bef5" kind="variable"><name>UserPhraseSplitted</name></member>
+    <member refid="dc/d09/namespace_main_1a1d01b0f3654eb2b5a68c9f9ebc30a76f" kind="function"><name>PhraseSplit</name></member>
+    <member refid="dc/d09/namespace_main_1ade6a1244786f64f5339dc08d360b4656" kind="function"><name>TimerStart</name></member>
+    <member refid="dc/d09/namespace_main_1aad33940e3c3aecc747de02d073e8ef90" kind="function"><name>TimerEnd</name></member>
+    <member refid="dc/d09/namespace_main_1abb8688485662cdab50dd3a21be5bd011" kind="function"><name>MakeStartUserDir</name></member>
+    <member refid="dc/d09/namespace_main_1a1cb922774e428172dfd6fdc29f151ea1" kind="function"><name>SignUp</name></member>
+    <member refid="dc/d09/namespace_main_1a90e0a9375c99e2b6358a9719e0d98564" kind="function"><name>Login</name></member>
+    <member refid="dc/d09/namespace_main_1a5208611bd9857e271f1f29adfaf6d486" kind="function"><name>LoginSignupChoise</name></member>
+    <member refid="dc/d09/namespace_main_1acdc63151e37b23f383d2cdaee1224915" kind="function"><name>SetTime</name></member>
+    <member refid="dc/d09/namespace_main_1a30424fcb6e4b7f7c1d17d854078fc7d1" kind="function"><name>WriteTime</name></member>
+    <member refid="dc/d09/namespace_main_1a3dea03126fc26dc32fa78d9668c2fe9d" kind="function"><name>Checker</name></member>
+    <member refid="dc/d09/namespace_main_1a91347ff47fc2acd8750dc2f72dc91e0e" kind="function"><name>Accuracy</name></member>
+    <member refid="dc/d09/namespace_main_1a45dc92198c91285a47318d604e536768" kind="function"><name>ChooseDifficulty</name></member>
+  </compound>
+  <compound refid="db/d09/namespacephrases" kind="namespace"><name>phrases</name>
+    <member refid="db/d09/namespacephrases_1aad150bc2274f15b5d6f1663eb20a40a7" kind="variable"><name>TestPhrase</name></member>
+    <member refid="db/d09/namespacephrases_1aa1e4f49ba414f7521697b3c5e357a9f5" kind="variable"><name>BeginnerPhrase</name></member>
+    <member refid="db/d09/namespacephrases_1aed96c55bca7e26da0b6615c98b081203" kind="variable"><name>IntiermidiatePhrase</name></member>
+    <member refid="db/d09/namespacephrases_1ad7a9c84b340b3d9a1a444165994d12fd" kind="variable"><name>ExpertPhrase</name></member>
+  </compound>
+  <compound refid="dd/d11/_main_8py" kind="file"><name>Main.py</name>
+  </compound>
+  <compound refid="dd/d02/phrases_8py" kind="file"><name>phrases.py</name>
+  </compound>
+  <compound refid="d9/d16/_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="d3/d0c/md__r_e_a_d_m_e" kind="page"><name>md__r_e_a_d_m_e</name>
+  </compound>
+</doxygenindex>

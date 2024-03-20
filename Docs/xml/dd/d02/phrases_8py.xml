@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dd/d02/phrases_8py" kind="file" language="Python">
+    <compoundname>phrases.py</compoundname>
+    <innernamespace refid="db/d09/namespacephrases">phrases</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="db/d09/namespacephrases_1aad150bc2274f15b5d6f1663eb20a40a7" refkind="member"><highlight class="normal">TestPhrase<sp/>=<sp/>[</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Jeg<sp/>er<sp/>en<sp/>taberabe&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">]</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="db/d09/namespacephrases_1aa1e4f49ba414f7521697b3c5e357a9f5" refkind="member"><highlight class="normal">BeginnerPhrase<sp/>=<sp/>[</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;BegTest&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">]</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="db/d09/namespacephrases_1aed96c55bca7e26da0b6615c98b081203" refkind="member"><highlight class="normal">IntiermidiatePhrase<sp/>=<sp/>[</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;InterTest&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">]</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="db/d09/namespacephrases_1ad7a9c84b340b3d9a1a444165994d12fd" refkind="member"><highlight class="normal">ExpertPhrase<sp/>=<sp/>[</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ExpTest&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">]</highlight></codeline>
+    </programlisting>
+    <location file="phrases.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,108 @@
+.TH "Main.py" 3 "Wed Mar 20 2024 11:46:46" "Type Tester" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Main.py
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBMain\&.Parrent\fP"
+.br
+.ti -1c
+.RI "class \fBMain\&.Beginner\fP"
+.br
+.ti -1c
+.RI "class \fBMain\&.Intermidiate\fP"
+.br
+.ti -1c
+.RI "class \fBMain\&.Expert\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBMain\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMain\&.PhraseSplit\fP (SplittingPhrase, List)"
+.br
+.ti -1c
+.RI "\fBMain\&.TimerStart\fP ()"
+.br
+.ti -1c
+.RI "\fBMain\&.TimerEnd\fP ()"
+.br
+.ti -1c
+.RI "\fBMain\&.MakeStartUserDir\fP ()"
+.br
+.ti -1c
+.RI "\fBMain\&.SignUp\fP ()"
+.br
+.ti -1c
+.RI "\fBMain\&.Login\fP ()"
+.br
+.ti -1c
+.RI "\fBMain\&.LoginSignupChoise\fP ()"
+.br
+.ti -1c
+.RI "\fBMain\&.SetTime\fP (StartTime, EndTime)"
+.br
+.ti -1c
+.RI "\fBMain\&.WriteTime\fP (time, accuracy, difficulty)"
+.br
+.ti -1c
+.RI "\fBMain\&.Checker\fP (Phrase1, Phrase2)"
+.br
+.ti -1c
+.RI "\fBMain\&.Accuracy\fP ()"
+.br
+.ti -1c
+.RI "\fBMain\&.ChooseDifficulty\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBMain\&.now\fP = datetime\&.datetime\&.now()"
+.br
+.ti -1c
+.RI "\fBMain\&.CurrentDate\fP = str(now\&.strftime('%d\-%m\-%Y'))"
+.br
+.ti -1c
+.RI "\fBMain\&.CurrentTime\fP = str(now\&.strftime('%H\&.%M'))"
+.br
+.ti -1c
+.RI "\fBMain\&.CurrentDirectory\fP = os\&.getcwd()"
+.br
+.ti -1c
+.RI "\fBMain\&.CreateUserDir\fP = os\&.path\&.join(\fBCurrentDirectory\fP, 'Users')"
+.br
+.ti -1c
+.RI "str \fBMain\&.UsersDirectory\fP = f'{\fBCurrentDirectory\fP}/Users'"
+.br
+.ti -1c
+.RI "\fBMain\&.OSUserDirectory\fP = os\&.path\&.join(\fBUsersDirectory\fP)"
+.br
+.ti -1c
+.RI "\fBMain\&.TestPhraseType\fP = \fBTestPhrase\fP[randint(0,len(\fBTestPhrase\fP)\-1)]"
+.br
+.ti -1c
+.RI "list \fBMain\&.MainPhraseSplitted\fP = []"
+.br
+.ti -1c
+.RI "list \fBMain\&.UserPhraseSplitted\fP = []"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Type Tester from the source code\&.

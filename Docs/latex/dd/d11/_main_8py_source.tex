@@ -1,0 +1,291 @@
+\doxysection{Main.\+py}
+\hypertarget{_main_8py_source}{}\label{_main_8py_source}\mbox{\hyperlink{_main_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00001}\mbox{\hyperlink{namespace_main}{00001}}\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00002}00002\ \textcolor{comment}{\#\ Modules}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00003}00003\ \textcolor{keyword}{from}\ phrases\ \textcolor{keyword}{import}\ *}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00004}00004\ \textcolor{keyword}{from}\ random\ \textcolor{keyword}{import}\ randint}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00005}00005\ \textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00006}00006\ \textcolor{keyword}{import}\ datetime}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00007}00007\ \textcolor{keyword}{import}\ os}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00010}00010\ \textcolor{comment}{\#\ Variables}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00011}\mbox{\hyperlink{namespace_main_afb87e9c2cd127261c128cd6522c8613c}{00011}}\ now\ =\ datetime.datetime.now()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00012}\mbox{\hyperlink{namespace_main_a4e23762ea59613a42985604a0cedbd86}{00012}}\ CurrentDate\ =\ str(now.strftime(\textcolor{stringliteral}{"{}\%d-\/\%m-\/\%Y"{}}))}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00013}\mbox{\hyperlink{namespace_main_a8689c769cd84287a04dc7c8d27774f9e}{00013}}\ CurrentTime\ =\ str(now.strftime(\textcolor{stringliteral}{"{}\%H.\%M"{}}))}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00015}\mbox{\hyperlink{namespace_main_a130601c3bd8356a1a32d413cd468a2c7}{00015}}\ CurrentDirectory\ =\ os.getcwd()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00016}\mbox{\hyperlink{namespace_main_afdeb3521e270ae29c9d7a67f1e8d8691}{00016}}\ CreateUserDir\ =\ os.path.join(CurrentDirectory,\ \textcolor{stringliteral}{"{}Users"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00017}\mbox{\hyperlink{namespace_main_aadca5f678e366137bdf1fedbb6cc58ad}{00017}}\ UsersDirectory\ =\ f\textcolor{stringliteral}{"{}\{CurrentDirectory\}/Users"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00018}\mbox{\hyperlink{namespace_main_ad2eac4f47d5a5b9d2402584bc7291c4e}{00018}}\ OSUserDirectory\ =\ os.path.join(UsersDirectory)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00020}\mbox{\hyperlink{namespace_main_ac8f9d70642442b220e9d42af4be6268d}{00020}}\ TestPhraseType\ =\ TestPhrase[randint(0,len(TestPhrase)-\/1)]}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00021}\mbox{\hyperlink{namespace_main_ae47844a282521a252f4a2b31eb88e52c}{00021}}\ MainPhraseSplitted\ =\ []}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00022}\mbox{\hyperlink{namespace_main_a754949a4060496aabeadc57c09b5bef5}{00022}}\ UserPhraseSplitted\ =\ []}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00024}00024\ \textcolor{comment}{\#\ Classes}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00026}00026\ \textcolor{comment}{\#\ The\ class\ \`{}Parrent`\ initializes\ by\ creating\ a\ user\ directory\ and\ prompting\ the\ user\ to\ choose}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00027}00027\ \textcolor{comment}{\#\ between\ logging\ in\ or\ signing\ up\ before\ displaying\ a\ message.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00028}\mbox{\hyperlink{class_main_1_1_parrent}{00028}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_1_1_parrent}{Parrent}}():}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00029}\mbox{\hyperlink{class_main_1_1_parrent_a0d4f0b11961e6fba99cf118fd1207fbd}{00029}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{class_main_1_1_parrent_a0d4f0b11961e6fba99cf118fd1207fbd}{\_\_init\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00030}00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_abb8688485662cdab50dd3a21be5bd011}{MakeStartUserDir}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00031}00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a5208611bd9857e271f1f29adfaf6d486}{LoginSignupChoise}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00033}00033\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}Please\ enter\ this\ phrase\ as\ fast\ as\ you\ can:\(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00036}00036\ \textcolor{comment}{\#\ The\ \`{}Beginner`\ class\ in\ Python\ is\ designed\ to\ help\ beginners\ practice\ typing\ phrases\ and\ measure}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00037}00037\ \textcolor{comment}{\#\ their\ accuracy\ and\ speed.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00038}\mbox{\hyperlink{class_main_1_1_beginner}{00038}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_1_1_beginner}{Beginner}}(\mbox{\hyperlink{class_main_1_1_parrent}{Parrent}}):}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00039}\mbox{\hyperlink{class_main_1_1_beginner_a27cd5307b220e55ffba9fa4841ad8b4b}{00039}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{class_main_1_1_beginner_a27cd5307b220e55ffba9fa4841ad8b4b}{\_\_init\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00040}00040\ \ \ \ \ \ \ \ \ super().\mbox{\hyperlink{class_main_1_1_beginner_a27cd5307b220e55ffba9fa4841ad8b4b}{\_\_init\_\_}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00041}00041\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00042}00042\ \ \ \ \ \ \ \ \ Phrase\ =\ BeginnerPhrase[randint(0,len(BeginnerPhrase)-\/1)]}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00044}00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a1d01b0f3654eb2b5a68c9f9ebc30a76f}{PhraseSplit}}(Phrase,\ MainPhraseSplitted)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00045}00045\ \ \ \ \ \ \ \ \ print(MainPhraseSplitted,\textcolor{stringliteral}{"{}\(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00047}00047\ \ \ \ \ \ \ \ \ StartTime\ =\ \mbox{\hyperlink{namespace_main_ade6a1244786f64f5339dc08d360b4656}{TimerStart}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00048}00048\ \ \ \ \ \ \ \ \ UserInput\ =\ input()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00049}00049\ \ \ \ \ \ \ \ \ EndTime\ =\ \mbox{\hyperlink{namespace_main_aad33940e3c3aecc747de02d073e8ef90}{TimerEnd}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00050}00050\ \ \ \ \ \ \ \ \ Time\ =\ \mbox{\hyperlink{namespace_main_acdc63151e37b23f383d2cdaee1224915}{SetTime}}(StartTime,\ EndTime)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00052}00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a3dea03126fc26dc32fa78d9668c2fe9d}{Checker}}(UserPhraseSplitted,\ MainPhraseSplitted)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00054}00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a1d01b0f3654eb2b5a68c9f9ebc30a76f}{PhraseSplit}}(UserInput,\ UserPhraseSplitted)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00055}00055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a91347ff47fc2acd8750dc2f72dc91e0e}{Accuracy}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00057}00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a30424fcb6e4b7f7c1d17d854078fc7d1}{WriteTime}}(Time,\ AccuracyPercent,\ \_\_class\_\_.\_\_name\_\_)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00058}00058\ \ \ \ \ \ \ \ \ print(Time)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00060}00060\ \textcolor{comment}{\#\ The\ \`{}Intermidiate`\ class\ is\ designed\ to\ handle\ user\ input,\ check\ its\ accuracy\ against\ a\ main\ phrase,}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00061}00061\ \textcolor{comment}{\#\ and\ record\ timing\ and\ accuracy\ metrics.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00062}\mbox{\hyperlink{class_main_1_1_intermidiate}{00062}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_1_1_intermidiate}{Intermidiate}}(\mbox{\hyperlink{class_main_1_1_parrent}{Parrent}}):}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00063}\mbox{\hyperlink{class_main_1_1_intermidiate_a44a353367883c6128f03a016a87f36e3}{00063}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{class_main_1_1_intermidiate_a44a353367883c6128f03a016a87f36e3}{\_\_init\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00064}00064\ \ \ \ \ \ \ \ \ super().\mbox{\hyperlink{class_main_1_1_intermidiate_a44a353367883c6128f03a016a87f36e3}{\_\_init\_\_}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00065}00065\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00066}00066\ \ \ \ \ \ \ \ \ Phrase\ =\ IntiermidiatePhrase[randint(0,len(IntiermidiatePhrase)-\/1)]}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00068}00068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a1d01b0f3654eb2b5a68c9f9ebc30a76f}{PhraseSplit}}(Phrase,\ MainPhraseSplitted)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00069}00069\ \ \ \ \ \ \ \ \ print(MainPhraseSplitted,\textcolor{stringliteral}{"{}\(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00071}00071\ \ \ \ \ \ \ \ \ StartTime\ =\ \mbox{\hyperlink{namespace_main_ade6a1244786f64f5339dc08d360b4656}{TimerStart}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00072}00072\ \ \ \ \ \ \ \ \ UserInput\ =\ input()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00073}00073\ \ \ \ \ \ \ \ \ EndTime\ =\ \mbox{\hyperlink{namespace_main_aad33940e3c3aecc747de02d073e8ef90}{TimerEnd}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00074}00074\ \ \ \ \ \ \ \ \ Time\ =\ \mbox{\hyperlink{namespace_main_acdc63151e37b23f383d2cdaee1224915}{SetTime}}(StartTime,\ EndTime)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00076}00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a3dea03126fc26dc32fa78d9668c2fe9d}{Checker}}(UserPhraseSplitted,\ MainPhraseSplitted)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00078}00078\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a1d01b0f3654eb2b5a68c9f9ebc30a76f}{PhraseSplit}}(UserInput,\ UserPhraseSplitted)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00079}00079\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a91347ff47fc2acd8750dc2f72dc91e0e}{Accuracy}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00081}00081\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a30424fcb6e4b7f7c1d17d854078fc7d1}{WriteTime}}(Time,\ AccuracyPercent,\ \_\_class\_\_.\_\_name\_\_)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00082}00082\ \ \ \ \ \ \ \ \ print(Time)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00084}00084\ \textcolor{comment}{\#\ This\ Python\ class\ \`{}Expert`\ initializes\ with\ a\ random\ phrase,\ prompts\ user\ input,\ calculates\ time}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00085}00085\ \textcolor{comment}{\#\ taken,\ checks\ accuracy,\ and\ writes\ time\ and\ accuracy\ to\ a\ file.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00086}\mbox{\hyperlink{class_main_1_1_expert}{00086}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_1_1_expert}{Expert}}(\mbox{\hyperlink{class_main_1_1_parrent}{Parrent}}):}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00087}\mbox{\hyperlink{class_main_1_1_expert_ac75b8e039a48ae806574ed64c7670498}{00087}}\ \ \ \ \ \textcolor{keyword}{def\ }\mbox{\hyperlink{class_main_1_1_expert_ac75b8e039a48ae806574ed64c7670498}{\_\_init\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00088}00088\ \ \ \ \ \ \ \ \ super().\mbox{\hyperlink{class_main_1_1_expert_ac75b8e039a48ae806574ed64c7670498}{\_\_init\_\_}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00089}00089\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00090}00090\ \ \ \ \ \ \ \ \ Phrase\ =\ ExpertPhrase[randint(0,len(ExpertPhrase)-\/1)]}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00092}00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a1d01b0f3654eb2b5a68c9f9ebc30a76f}{PhraseSplit}}(Phrase,\ MainPhraseSplitted)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00093}00093\ \ \ \ \ \ \ \ \ print(MainPhraseSplitted,\textcolor{stringliteral}{"{}\(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00095}00095\ \ \ \ \ \ \ \ \ StartTime\ =\ \mbox{\hyperlink{namespace_main_ade6a1244786f64f5339dc08d360b4656}{TimerStart}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00096}00096\ \ \ \ \ \ \ \ \ UserInput\ =\ input()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00097}00097\ \ \ \ \ \ \ \ \ EndTime\ =\ \mbox{\hyperlink{namespace_main_aad33940e3c3aecc747de02d073e8ef90}{TimerEnd}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00098}00098\ \ \ \ \ \ \ \ \ Time\ =\ \mbox{\hyperlink{namespace_main_acdc63151e37b23f383d2cdaee1224915}{SetTime}}(StartTime,\ EndTime)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00100}00100\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a3dea03126fc26dc32fa78d9668c2fe9d}{Checker}}(UserPhraseSplitted,\ MainPhraseSplitted)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00102}00102\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a1d01b0f3654eb2b5a68c9f9ebc30a76f}{PhraseSplit}}(UserInput,\ UserPhraseSplitted)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00103}00103\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a91347ff47fc2acd8750dc2f72dc91e0e}{Accuracy}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00105}00105\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a30424fcb6e4b7f7c1d17d854078fc7d1}{WriteTime}}(Time,\ AccuracyPercent,\ \_\_class\_\_.\_\_name\_\_)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00106}00106\ \ \ \ \ \ \ \ \ print(Time)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00107}00107\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00109}\mbox{\hyperlink{namespace_main_a1d01b0f3654eb2b5a68c9f9ebc30a76f}{00109}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespace_main_a1d01b0f3654eb2b5a68c9f9ebc30a76f}{PhraseSplit}}(SplittingPhrase,\ List):}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00110}00110\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00111}00111\ \textcolor{stringliteral}{\ \ \ \ The\ function\ \`{}PhraseSplit\`{}\ takes\ a\ phrase\ and\ appends\ each\ letter\ to\ a\ given\ list.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00112}00112\ \textcolor{stringliteral}{\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00113}00113\ \textcolor{stringliteral}{\ \ \ \ :param\ SplittingPhrase:\ The\ \`{}SplittingPhrase\`{}\ parameter\ is\ the\ phrase\ or\ string\ that\ you\ want\ to}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00114}00114\ \textcolor{stringliteral}{\ \ \ \ split\ into\ individual\ letters}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00115}00115\ \textcolor{stringliteral}{\ \ \ \ :param\ List:\ The\ \`{}List\`{}\ parameter\ in\ the\ \`{}PhraseSplit\`{}\ function\ is\ a\ list\ that\ will\ store\ the}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00116}00116\ \textcolor{stringliteral}{\ \ \ \ individual\ letters\ of\ the\ \`{}SplittingPhrase\`{}\ after\ splitting}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00117}00117\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00118}00118\ \ \ \ \ \textcolor{keywordflow}{for}\ Letter\ \textcolor{keywordflow}{in}\ SplittingPhrase:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00119}00119\ \ \ \ \ \ \ \ \ List.append(Letter)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00121}\mbox{\hyperlink{namespace_main_ade6a1244786f64f5339dc08d360b4656}{00121}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespace_main_ade6a1244786f64f5339dc08d360b4656}{TimerStart}}():}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00122}00122\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00123}00123\ \textcolor{stringliteral}{\ \ \ \ The\ function\ \`{}TimerStart()\`{}\ returns\ the\ current\ time\ when\ called.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00124}00124\ \textcolor{stringliteral}{\ \ \ \ :return:\ The\ \`{}TimerStart()\`{}\ function\ is\ returning\ the\ current\ time\ when\ it\ is\ called\ using}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00125}00125\ \textcolor{stringliteral}{\ \ \ \ \`{}time.time()\`{}.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00126}00126\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00127}00127\ \ \ \ \ \textcolor{keywordflow}{return}\ time.time()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00128}00128\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00129}\mbox{\hyperlink{namespace_main_aad33940e3c3aecc747de02d073e8ef90}{00129}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespace_main_aad33940e3c3aecc747de02d073e8ef90}{TimerEnd}}():}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00130}00130\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00131}00131\ \textcolor{stringliteral}{\ \ \ \ The\ function\ \`{}TimerEnd\`{}\ returns\ the\ current\ time\ when\ called.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00132}00132\ \textcolor{stringliteral}{\ \ \ \ :return:\ The\ function\ \`{}TimerEnd()\`{}\ is\ returning\ the\ current\ time\ when\ it\ is\ called\ using}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00133}00133\ \textcolor{stringliteral}{\ \ \ \ \`{}time.time()\`{}.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00134}00134\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00135}00135\ \ \ \ \ \textcolor{keywordflow}{return}\ time.time()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00136}00136\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00137}\mbox{\hyperlink{namespace_main_abb8688485662cdab50dd3a21be5bd011}{00137}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespace_main_abb8688485662cdab50dd3a21be5bd011}{MakeStartUserDir}}():}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00138}00138\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00139}00139\ \textcolor{stringliteral}{\ \ \ \ The\ function\ attempts\ to\ create\ a\ Users\ folder\ if\ it\ does\ not\ already\ exist.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00140}00140\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00141}00141\ \ \ \ \ \textcolor{keywordflow}{try}:\ \textcolor{comment}{\#\ Make\ the\ Users\ Folder\ if\ it\ doesn't\ exist}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00142}00142\ \ \ \ \ \ \ \ \ os.mkdir(CreateUserDir)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00143}00143\ \ \ \ \ \textcolor{keywordflow}{except}:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00144}00144\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{pass}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00145}00145\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00146}\mbox{\hyperlink{namespace_main_a1cb922774e428172dfd6fdc29f151ea1}{00146}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespace_main_a1cb922774e428172dfd6fdc29f151ea1}{SignUp}}():}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00147}00147\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00148}00148\ \textcolor{stringliteral}{\ \ \ \ The\ function\ \`{}SignUp\`{}\ prompts\ the\ user\ to\ enter\ a\ username,\ creates\ a\ directory\ with\ that\ username,}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00149}00149\ \textcolor{stringliteral}{\ \ \ \ and\ handles\ cases\ where\ the\ username\ already\ exists.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00150}00150\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00151}00151\ \ \ \ \ UserName\ =\ input(\textcolor{stringliteral}{"{}Please\ enter\ your\ Username:\ "{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00152}00152\ \ \ \ \ UserDir\ =\ os.path.join(OSUserDirectory,\ UserName)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00153}00153\ \ \ \ \ \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00154}00154\ \ \ \ \ \ \ \ \ os.mkdir(UserDir)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00155}00155\ \ \ \ \ \textcolor{keywordflow}{except}:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00156}00156\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}That\ User\ Already\ Exists\ try\ again\ \(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00157}00157\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a1cb922774e428172dfd6fdc29f151ea1}{SignUp}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00158}00158\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00159}\mbox{\hyperlink{namespace_main_a90e0a9375c99e2b6358a9719e0d98564}{00159}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespace_main_a90e0a9375c99e2b6358a9719e0d98564}{Login}}():}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00160}00160\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00161}00161\ \textcolor{stringliteral}{\ \ \ \ The\ \`{}Login\`{}\ function\ prompts\ the\ user\ to\ enter\ a\ username,\ creates\ a\ directory\ for\ the\ user,\ and}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00162}00162\ \textcolor{stringliteral}{\ \ \ \ handles\ login\ success\ or\ failure.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00163}00163\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00164}00164\ \ \ \ \ \textcolor{keyword}{global}\ CurrentUser}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00165}00165\ \ \ \ \ CurrentUser\ =\ input(\textcolor{stringliteral}{"{}Please\ enter\ the\ username:\ "{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00166}00166\ \ \ \ \ UserDir\ =\ os.path.join(OSUserDirectory,\ CurrentUser)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00167}00167\ \ \ \ \ \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00168}00168\ \ \ \ \ \ \ \ \ os.mkdir(UserDir)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00169}00169\ \ \ \ \ \textcolor{keywordflow}{except}:\ \textcolor{comment}{\#\ If\ successful\ login}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00170}00170\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}Success"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00171}00171\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00172}00172\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}User\ doesn't\ exist...\ Try\ again\(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00173}00173\ \ \ \ \ \ \ \ \ os.rmdir(UserDir)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00174}00174\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a90e0a9375c99e2b6358a9719e0d98564}{Login}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00175}00175\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00176}00176\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00177}\mbox{\hyperlink{namespace_main_a5208611bd9857e271f1f29adfaf6d486}{00177}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespace_main_a5208611bd9857e271f1f29adfaf6d486}{LoginSignupChoise}}():}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00178}00178\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00179}00179\ \textcolor{stringliteral}{\ \ \ \ The\ function\ \`{}LoginSignupChoise\`{}\ prompts\ the\ user\ to\ choose\ between\ logging\ in\ or\ signing\ up\ and}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00180}00180\ \textcolor{stringliteral}{\ \ \ \ then\ calls\ the\ respective\ functions\ based\ on\ the\ user's\ choice.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00181}00181\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00182}00182\ \ \ \ \ Login\_Signup\ =\ input(\textcolor{stringliteral}{"{}Do\ you\ want\ to\ log\ in\ (L)\ or\ sign\ up\ (S)?\(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00183}00183\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00184}00184\ \ \ \ \ \textcolor{keywordflow}{if}\ Login\_Signup.lower()\ ==\ \textcolor{stringliteral}{"{}l"{}}:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00185}00185\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a90e0a9375c99e2b6358a9719e0d98564}{Login}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00186}00186\ \ \ \ \ \textcolor{keywordflow}{elif}\ Login\_Signup.lower()\ ==\ \textcolor{stringliteral}{"{}s"{}}:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00187}00187\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a1cb922774e428172dfd6fdc29f151ea1}{SignUp}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00188}00188\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00189}00189\ \ \ \ \ \ \ \ \ print(f\textcolor{stringliteral}{"{}Something\ went\ wrong,\ try\ again"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00190}00190\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a5208611bd9857e271f1f29adfaf6d486}{LoginSignupChoise}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00191}00191\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00192}00192\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00193}\mbox{\hyperlink{namespace_main_acdc63151e37b23f383d2cdaee1224915}{00193}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespace_main_acdc63151e37b23f383d2cdaee1224915}{SetTime}}(StartTime,\ EndTime):}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00194}00194\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00195}00195\ \textcolor{stringliteral}{\ \ \ \ The\ function\ SetTime\ calculates\ the\ difference\ in\ time\ between\ a\ start\ time\ and\ an\ end\ time.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00196}00196\ \textcolor{stringliteral}{\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00197}00197\ \textcolor{stringliteral}{\ \ \ \ :param\ StartTime:\ The\ \`{}StartTime\`{}\ parameter\ represents\ the\ starting\ time,\ typically\ in\ a\ numerical}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00198}00198\ \textcolor{stringliteral}{\ \ \ \ format\ such\ as\ a\ timestamp\ or\ a\ numerical\ value\ representing\ a\ specific\ time}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00199}00199\ \textcolor{stringliteral}{\ \ \ \ :param\ EndTime:\ The\ \`{}EndTime\`{}\ parameter\ represents\ the\ time\ at\ which\ a\ particular\ event\ or\ process}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00200}00200\ \textcolor{stringliteral}{\ \ \ \ ends.\ It\ could\ be\ a\ specific\ point\ in\ time,\ such\ as\ the\ end\ of\ a\ task\ or\ the\ completion\ of\ an}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00201}00201\ \textcolor{stringliteral}{\ \ \ \ activity}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00202}00202\ \textcolor{stringliteral}{\ \ \ \ :return:\ The\ function\ \`{}SetTime\`{}\ returns\ the\ difference\ between\ \`{}EndTime\`{}\ and\ \`{}StartTime\`{}\ as\ an}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00203}00203\ \textcolor{stringliteral}{\ \ \ \ integer.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00204}00204\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00205}00205\ \ \ \ \ \textcolor{keywordflow}{return}\ int(EndTime\ -\/\ StartTime)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00206}00206\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00207}00207\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00208}\mbox{\hyperlink{namespace_main_a30424fcb6e4b7f7c1d17d854078fc7d1}{00208}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespace_main_a30424fcb6e4b7f7c1d17d854078fc7d1}{WriteTime}}(time,\ accuracy,\ difficulty):}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00209}00209\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00210}00210\ \textcolor{stringliteral}{\ \ \ \ The\ function\ \`{}WriteTime\`{}\ writes\ time-\/related\ data\ to\ a\ text\ file\ in\ a\ specified\ directory.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00211}00211\ \textcolor{stringliteral}{\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00212}00212\ \textcolor{stringliteral}{\ \ \ \ :param\ time:\ The\ \`{}time\`{}\ parameter\ in\ the\ \`{}WriteTime\`{}\ function\ represents\ the\ amount\ of\ time\ taken\ to}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00213}00213\ \textcolor{stringliteral}{\ \ \ \ complete\ a\ task\ or\ activity,\ typically\ measured\ in\ seconds}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00214}00214\ \textcolor{stringliteral}{\ \ \ \ :param\ accuracy:\ Accuracy\ refers\ to\ how\ close\ a\ measured\ value\ is\ to\ the\ true\ value.\ It\ is\ often}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00215}00215\ \textcolor{stringliteral}{\ \ \ \ expressed\ as\ a\ percentage\ and\ indicates\ the\ precision\ of\ the\ measurement.\ In\ the\ context\ of\ the}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00216}00216\ \textcolor{stringliteral}{\ \ \ \ \`{}WriteTime\`{}\ function\ you\ provided,\ accuracy\ would\ likely\ refer\ to\ the\ precision\ or\ correctness\ of}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00217}00217\ \textcolor{stringliteral}{\ \ \ \ the\ time\ measurement\ or\ task\ completion}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00218}00218\ \textcolor{stringliteral}{\ \ \ \ :param\ difficulty:\ The\ \`{}WriteTime\`{}\ function\ you\ provided\ seems\ to\ be\ writing\ some\ information\ to\ a}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00219}00219\ \textcolor{stringliteral}{\ \ \ \ text\ file.\ However,\ it\ seems\ like\ you\ haven't\ defined\ \`{}CurrentUser\`{},\ \`{}CurrentDate\`{},\ and}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00220}00220\ \textcolor{stringliteral}{\ \ \ \ \`{}CurrentTime\`{}\ in\ the\ function.\ You\ will\ need\ to\ pass\ these\ variables\ as\ arguments\ to\ the\ function\ or}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00221}00221\ \textcolor{stringliteral}{\ \ \ \ define\ them\ within}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00222}00222\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00223}00223\ \ \ \ \ Directory\ =\ f\textcolor{stringliteral}{"{}\{os.getcwd()\}/Users/\{CurrentUser\}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00224}00224\ \ \ \ \ Place\ =\ os.path.join(Directory,\ f\textcolor{stringliteral}{"{}\{CurrentDate\}\ \{CurrentTime\}.txt"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00225}00225\ \ \ \ \ \textcolor{keyword}{with}\ open(Place,\ \textcolor{stringliteral}{"{}w"{}})\ \textcolor{keyword}{as}\ File:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00226}00226\ \ \ \ \ \ \ \ \ File.write(f\textcolor{stringliteral}{"{}Date:\ \{CurrentDate\}\(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00227}00227\ \ \ \ \ \ \ \ \ File.write(f\textcolor{stringliteral}{"{}Clock\ Time:\ \{CurrentTime\}\(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00228}00228\ \ \ \ \ \ \ \ \ File.write(f\textcolor{stringliteral}{"{}Difficulty:\ \{difficulty\}\(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00229}00229\ \ \ \ \ \ \ \ \ File.write(f\textcolor{stringliteral}{"{}Your\ Time:\ \{time\}\ secs\ \(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00230}00230\ \ \ \ \ \ \ \ \ File.write(f\textcolor{stringliteral}{"{}Your\ accuracy:\ \{accuracy\}\%\(\backslash\)n"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00231}00231\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00232}\mbox{\hyperlink{namespace_main_a3dea03126fc26dc32fa78d9668c2fe9d}{00232}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespace_main_a3dea03126fc26dc32fa78d9668c2fe9d}{Checker}}(Phrase1,\ Phrase2):}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00233}00233\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00234}00234\ \textcolor{stringliteral}{\ \ \ \ The\ function\ \`{}Checker\`{}\ compares\ two\ phrases\ character\ by\ character\ and\ counts\ the\ number\ of\ correct}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00235}00235\ \textcolor{stringliteral}{\ \ \ \ matches.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00236}00236\ \textcolor{stringliteral}{\ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00237}00237\ \textcolor{stringliteral}{\ \ \ \ :param\ Phrase1:\ The\ function\ \`{}Checker\`{}\ takes\ two\ input\ parameters\ \`{}Phrase1\`{}\ and\ \`{}Phrase2\`{},\ which\ are}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00238}00238\ \textcolor{stringliteral}{\ \ \ \ strings\ that\ are\ being\ compared\ character\ by\ character.\ The\ function\ then\ counts\ the\ number\ of}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00239}00239\ \textcolor{stringliteral}{\ \ \ \ characters\ that\ match\ at\ the\ same\ position\ in\ both\ phrases\ and\ stores\ the\ count\ in\ the\ global}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00240}00240\ \textcolor{stringliteral}{\ \ \ \ variable\ \`{}CorrectCounter\`{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00241}00241\ \textcolor{stringliteral}{\ \ \ \ :param\ Phrase2:\ It\ looks\ like\ you\ have\ defined\ a\ function\ called\ \`{}Checker\`{}\ that\ takes\ two\ parameters}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00242}00242\ \textcolor{stringliteral}{\ \ \ \ \`{}Phrase1\`{}\ and\ \`{}Phrase2\`{}.\ The\ function\ compares\ the\ characters\ at\ each\ index\ of\ \`{}Phrase1\`{}\ and}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00243}00243\ \textcolor{stringliteral}{\ \ \ \ \`{}Phrase2\`{},\ and\ increments\ a\ global\ variable\ \`{}CorrectCounter\`{}\ if\ the\ characters\ match}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00244}00244\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00245}00245\ \ \ \ \ \textcolor{keyword}{global}\ CorrectCounter}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00246}00246\ \ \ \ \ CorrectCounter\ =\ 0}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00247}00247\ \ \ \ \ \textcolor{keywordflow}{for}\ index\ \textcolor{keywordflow}{in}\ range(len(Phrase1)):}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00248}00248\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ Phrase1[index]\ ==\ Phrase2[index]:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00249}00249\ \ \ \ \ \ \ \ \ \ \ \ \ CorrectCounter\ +=\ 1}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00250}00250\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00251}00251\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00252}00252\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00253}\mbox{\hyperlink{namespace_main_a91347ff47fc2acd8750dc2f72dc91e0e}{00253}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespace_main_a91347ff47fc2acd8750dc2f72dc91e0e}{Accuracy}}():}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00254}00254\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00255}00255\ \textcolor{stringliteral}{\ \ \ \ The\ \`{}Accuracy\`{}\ function\ calculates\ the\ accuracy\ percentage\ of\ a\ user's\ input\ compared\ to\ a\ main}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00256}00256\ \textcolor{stringliteral}{\ \ \ \ phrase\ by\ checking\ the\ correctness\ of\ each\ word.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00257}00257\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00258}00258\ \ \ \ \ \textcolor{keywordflow}{if}\ len(MainPhraseSplitted)\ >=\ len(UserPhraseSplitted):}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00259}00259\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a3dea03126fc26dc32fa78d9668c2fe9d}{Checker}}(UserPhraseSplitted,\ MainPhraseSplitted)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00260}00260\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00261}00261\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a3dea03126fc26dc32fa78d9668c2fe9d}{Checker}}(MainPhraseSplitted,UserPhraseSplitted)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00262}00262\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00263}00263\ \ \ \ \ \textcolor{keyword}{global}\ AccuracyPercent}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00264}00264\ \ \ \ \ \textcolor{keywordflow}{if}\ CorrectCounter\ !=\ 0:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00265}00265\ \ \ \ \ \ \ \ \ AccuracyPercent\ =\ int(CorrectCounter/len(MainPhraseSplitted)*100)}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00266}00266\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00267}00267\ \ \ \ \ \ \ \ \ AccuracyPercent\ =\ 0}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00268}00268\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00269}\mbox{\hyperlink{namespace_main_a45dc92198c91285a47318d604e536768}{00269}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespace_main_a45dc92198c91285a47318d604e536768}{ChooseDifficulty}}():}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00270}00270\ \ \ \ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00271}00271\ \textcolor{stringliteral}{\ \ \ \ The\ function\ ChooseDifficulty\ allows\ the\ user\ to\ select\ a\ desired\ difficulty\ level\ (Beginner,}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00272}00272\ \textcolor{stringliteral}{\ \ \ \ Intermediate,\ Expert)\ for\ a\ game.}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00273}00273\ \textcolor{stringliteral}{\ \ \ \ "{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00274}00274\ \ \ \ \ Difficulty\ =\ input(\textcolor{stringliteral}{"{}Please\ enter\ you\ disired\ difficulty:\(\backslash\)nBeginner\ (B)\(\backslash\)nIntermidiate\ (I)\(\backslash\)nExpert\ (E)\(\backslash\)n"{}}).lower()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00275}00275\ \ \ \ \ \textcolor{keywordflow}{if}\ Difficulty\ ==\ \textcolor{stringliteral}{"{}b"{}}:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00276}00276\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_1_1_beginner}{Beginner}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00277}00277\ \ \ \ \ \textcolor{keywordflow}{elif}\ Difficulty\ ==\ \textcolor{stringliteral}{"{}i"{}}:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00278}00278\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_1_1_intermidiate}{Intermidiate}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00279}00279\ \ \ \ \ \textcolor{keywordflow}{elif}\ Difficulty\ ==\ \textcolor{stringliteral}{"{}e"{}}:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00280}00280\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_main_1_1_expert}{Expert}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00281}00281\ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00282}00282\ \ \ \ \ \ \ \ \ print(\textcolor{stringliteral}{"{}didn't\ understand:\ Please\ try\ again"{}})}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00283}00283\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_main_a45dc92198c91285a47318d604e536768}{ChooseDifficulty}}()}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00284}00284\ }
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00285}00285\ \textcolor{keywordflow}{if}\ \_\_name\_\_\ ==\ \textcolor{stringliteral}{"{}\_\_main\_\_"{}}:}
+\DoxyCodeLine{\Hypertarget{_main_8py_source_l00286}00286\ \ \ \ \ \mbox{\hyperlink{namespace_main_a45dc92198c91285a47318d604e536768}{ChooseDifficulty}}()}
+
+\end{DoxyCode}

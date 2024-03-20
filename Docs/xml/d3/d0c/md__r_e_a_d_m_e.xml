@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="d3/d0c/md__r_e_a_d_m_e" kind="page">
+    <compoundname>md__r_e_a_d_m_e</compoundname>
+    <title>Type Tester</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="d3/d0c/md__r_e_a_d_m_e_1autotoc_md0"/>Tests your typing speed and accuracy</para>
+<sect1 id="d3/d0c/md__r_e_a_d_m_e_1autotoc_md1">
+<title>Getting Started</title><para>Start the program, either login or sign up, You only need a username, and it will make a folder that saves every test you make</para>
+<sect2 id="d3/d0c/md__r_e_a_d_m_e_1autotoc_md2">
+<title>Installing</title><para>Just unpack the zip file, and open the <ref refid="dd/d11/_main_8py" kindref="compound">Main.py</ref> file</para>
+</sect2>
+</sect1>
+<sect1 id="d3/d0c/md__r_e_a_d_m_e_1autotoc_md3">
+<title>Usage</title><para>After you have logged in, or signed in, you need to choose a difficulty, and from there you get a sentence you&apos;ll need to copy as fast as possible</para>
+</sect1>
+<sect1 id="d3/d0c/md__r_e_a_d_m_e_1autotoc_md4">
+<title>Acknowledgments</title><para>I&apos;ll aknowlegde my current teacher Kenneth Hebel, and my former teacher Talha Mahmood Sheikh for teaching me how to make a program like this. </para>
+</sect1>
+    </detaileddescription>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

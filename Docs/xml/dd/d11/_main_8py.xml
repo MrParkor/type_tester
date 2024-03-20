@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dd/d11/_main_8py" kind="file" language="Python">
+    <compoundname>Main.py</compoundname>
+    <innerclass refid="db/d1f/class_main_1_1_parrent" prot="public">Main::Parrent</innerclass>
+    <innerclass refid="d2/d0b/class_main_1_1_beginner" prot="public">Main::Beginner</innerclass>
+    <innerclass refid="da/d02/class_main_1_1_intermidiate" prot="public">Main::Intermidiate</innerclass>
+    <innerclass refid="d3/d1d/class_main_1_1_expert" prot="public">Main::Expert</innerclass>
+    <innernamespace refid="dc/d09/namespace_main">Main</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="dc/d09/namespace_main" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Modules</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>phrases<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>random<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>randint</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>time</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>datetime</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="dc/d09/namespace_main_1afb87e9c2cd127261c128cd6522c8613c" refkind="member"><highlight class="normal">now<sp/>=<sp/>datetime.datetime.now()</highlight></codeline>
+<codeline lineno="12" refid="dc/d09/namespace_main_1a4e23762ea59613a42985604a0cedbd86" refkind="member"><highlight class="normal">CurrentDate<sp/>=<sp/>str(now.strftime(</highlight><highlight class="stringliteral">&quot;%d-%m-%Y&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="13" refid="dc/d09/namespace_main_1a8689c769cd84287a04dc7c8d27774f9e" refkind="member"><highlight class="normal">CurrentTime<sp/>=<sp/>str(now.strftime(</highlight><highlight class="stringliteral">&quot;%H.%M&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="dc/d09/namespace_main_1a130601c3bd8356a1a32d413cd468a2c7" refkind="member"><highlight class="normal">CurrentDirectory<sp/>=<sp/>os.getcwd()</highlight></codeline>
+<codeline lineno="16" refid="dc/d09/namespace_main_1afdeb3521e270ae29c9d7a67f1e8d8691" refkind="member"><highlight class="normal">CreateUserDir<sp/>=<sp/>os.path.join(CurrentDirectory,<sp/></highlight><highlight class="stringliteral">&quot;Users&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="17" refid="dc/d09/namespace_main_1aadca5f678e366137bdf1fedbb6cc58ad" refkind="member"><highlight class="normal">UsersDirectory<sp/>=<sp/>f</highlight><highlight class="stringliteral">&quot;{CurrentDirectory}/Users&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="dc/d09/namespace_main_1ad2eac4f47d5a5b9d2402584bc7291c4e" refkind="member"><highlight class="normal">OSUserDirectory<sp/>=<sp/>os.path.join(UsersDirectory)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="dc/d09/namespace_main_1ac8f9d70642442b220e9d42af4be6268d" refkind="member"><highlight class="normal">TestPhraseType<sp/>=<sp/>TestPhrase[randint(0,len(TestPhrase)-1)]</highlight></codeline>
+<codeline lineno="21" refid="dc/d09/namespace_main_1ae47844a282521a252f4a2b31eb88e52c" refkind="member"><highlight class="normal">MainPhraseSplitted<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="22" refid="dc/d09/namespace_main_1a754949a4060496aabeadc57c09b5bef5" refkind="member"><highlight class="normal">UserPhraseSplitted<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Classes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">#<sp/>The<sp/>class<sp/>`Parrent`<sp/>initializes<sp/>by<sp/>creating<sp/>a<sp/>user<sp/>directory<sp/>and<sp/>prompting<sp/>the<sp/>user<sp/>to<sp/>choose</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">#<sp/>between<sp/>logging<sp/>in<sp/>or<sp/>signing<sp/>up<sp/>before<sp/>displaying<sp/>a<sp/>message.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="db/d1f/class_main_1_1_parrent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="db/d1f/class_main_1_1_parrent" kindref="compound">Parrent</ref>():</highlight></codeline>
+<codeline lineno="29" refid="db/d1f/class_main_1_1_parrent_1a0d4f0b11961e6fba99cf118fd1207fbd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="db/d1f/class_main_1_1_parrent_1a0d4f0b11961e6fba99cf118fd1207fbd" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1abb8688485662cdab50dd3a21be5bd011" kindref="member">MakeStartUserDir</ref>()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a5208611bd9857e271f1f29adfaf6d486" kindref="member">LoginSignupChoise</ref>()</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>this<sp/>phrase<sp/>as<sp/>fast<sp/>as<sp/>you<sp/>can:\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">#<sp/>The<sp/>`Beginner`<sp/>class<sp/>in<sp/>Python<sp/>is<sp/>designed<sp/>to<sp/>help<sp/>beginners<sp/>practice<sp/>typing<sp/>phrases<sp/>and<sp/>measure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">#<sp/>their<sp/>accuracy<sp/>and<sp/>speed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="d2/d0b/class_main_1_1_beginner" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d2/d0b/class_main_1_1_beginner" kindref="compound">Beginner</ref>(<ref refid="db/d1f/class_main_1_1_parrent" kindref="compound">Parrent</ref>):</highlight></codeline>
+<codeline lineno="39" refid="d2/d0b/class_main_1_1_beginner_1a27cd5307b220e55ffba9fa4841ad8b4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="d2/d0b/class_main_1_1_beginner_1a27cd5307b220e55ffba9fa4841ad8b4b" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="d2/d0b/class_main_1_1_beginner_1a27cd5307b220e55ffba9fa4841ad8b4b" kindref="member">__init__</ref>()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Phrase<sp/>=<sp/>BeginnerPhrase[randint(0,len(BeginnerPhrase)-1)]</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a1d01b0f3654eb2b5a68c9f9ebc30a76f" kindref="member">PhraseSplit</ref>(Phrase,<sp/>MainPhraseSplitted)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(MainPhraseSplitted,</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StartTime<sp/>=<sp/><ref refid="dc/d09/namespace_main_1ade6a1244786f64f5339dc08d360b4656" kindref="member">TimerStart</ref>()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UserInput<sp/>=<sp/>input()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EndTime<sp/>=<sp/><ref refid="dc/d09/namespace_main_1aad33940e3c3aecc747de02d073e8ef90" kindref="member">TimerEnd</ref>()</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Time<sp/>=<sp/><ref refid="dc/d09/namespace_main_1acdc63151e37b23f383d2cdaee1224915" kindref="member">SetTime</ref>(StartTime,<sp/>EndTime)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a3dea03126fc26dc32fa78d9668c2fe9d" kindref="member">Checker</ref>(UserPhraseSplitted,<sp/>MainPhraseSplitted)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a1d01b0f3654eb2b5a68c9f9ebc30a76f" kindref="member">PhraseSplit</ref>(UserInput,<sp/>UserPhraseSplitted)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a91347ff47fc2acd8750dc2f72dc91e0e" kindref="member">Accuracy</ref>()</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a30424fcb6e4b7f7c1d17d854078fc7d1" kindref="member">WriteTime</ref>(Time,<sp/>AccuracyPercent,<sp/>__class__.__name__)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(Time)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">#<sp/>The<sp/>`Intermidiate`<sp/>class<sp/>is<sp/>designed<sp/>to<sp/>handle<sp/>user<sp/>input,<sp/>check<sp/>its<sp/>accuracy<sp/>against<sp/>a<sp/>main<sp/>phrase,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">#<sp/>and<sp/>record<sp/>timing<sp/>and<sp/>accuracy<sp/>metrics.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="da/d02/class_main_1_1_intermidiate" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="da/d02/class_main_1_1_intermidiate" kindref="compound">Intermidiate</ref>(<ref refid="db/d1f/class_main_1_1_parrent" kindref="compound">Parrent</ref>):</highlight></codeline>
+<codeline lineno="63" refid="da/d02/class_main_1_1_intermidiate_1a44a353367883c6128f03a016a87f36e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="da/d02/class_main_1_1_intermidiate_1a44a353367883c6128f03a016a87f36e3" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="da/d02/class_main_1_1_intermidiate_1a44a353367883c6128f03a016a87f36e3" kindref="member">__init__</ref>()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Phrase<sp/>=<sp/>IntiermidiatePhrase[randint(0,len(IntiermidiatePhrase)-1)]</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a1d01b0f3654eb2b5a68c9f9ebc30a76f" kindref="member">PhraseSplit</ref>(Phrase,<sp/>MainPhraseSplitted)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(MainPhraseSplitted,</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StartTime<sp/>=<sp/><ref refid="dc/d09/namespace_main_1ade6a1244786f64f5339dc08d360b4656" kindref="member">TimerStart</ref>()</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UserInput<sp/>=<sp/>input()</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EndTime<sp/>=<sp/><ref refid="dc/d09/namespace_main_1aad33940e3c3aecc747de02d073e8ef90" kindref="member">TimerEnd</ref>()</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Time<sp/>=<sp/><ref refid="dc/d09/namespace_main_1acdc63151e37b23f383d2cdaee1224915" kindref="member">SetTime</ref>(StartTime,<sp/>EndTime)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a3dea03126fc26dc32fa78d9668c2fe9d" kindref="member">Checker</ref>(UserPhraseSplitted,<sp/>MainPhraseSplitted)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a1d01b0f3654eb2b5a68c9f9ebc30a76f" kindref="member">PhraseSplit</ref>(UserInput,<sp/>UserPhraseSplitted)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a91347ff47fc2acd8750dc2f72dc91e0e" kindref="member">Accuracy</ref>()</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a30424fcb6e4b7f7c1d17d854078fc7d1" kindref="member">WriteTime</ref>(Time,<sp/>AccuracyPercent,<sp/>__class__.__name__)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(Time)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>Python<sp/>class<sp/>`Expert`<sp/>initializes<sp/>with<sp/>a<sp/>random<sp/>phrase,<sp/>prompts<sp/>user<sp/>input,<sp/>calculates<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">#<sp/>taken,<sp/>checks<sp/>accuracy,<sp/>and<sp/>writes<sp/>time<sp/>and<sp/>accuracy<sp/>to<sp/>a<sp/>file.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="d3/d1d/class_main_1_1_expert" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d3/d1d/class_main_1_1_expert" kindref="compound">Expert</ref>(<ref refid="db/d1f/class_main_1_1_parrent" kindref="compound">Parrent</ref>):</highlight></codeline>
+<codeline lineno="87" refid="d3/d1d/class_main_1_1_expert_1ac75b8e039a48ae806574ed64c7670498" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="d3/d1d/class_main_1_1_expert_1ac75b8e039a48ae806574ed64c7670498" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>super().<ref refid="d3/d1d/class_main_1_1_expert_1ac75b8e039a48ae806574ed64c7670498" kindref="member">__init__</ref>()</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Phrase<sp/>=<sp/>ExpertPhrase[randint(0,len(ExpertPhrase)-1)]</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a1d01b0f3654eb2b5a68c9f9ebc30a76f" kindref="member">PhraseSplit</ref>(Phrase,<sp/>MainPhraseSplitted)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(MainPhraseSplitted,</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StartTime<sp/>=<sp/><ref refid="dc/d09/namespace_main_1ade6a1244786f64f5339dc08d360b4656" kindref="member">TimerStart</ref>()</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UserInput<sp/>=<sp/>input()</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EndTime<sp/>=<sp/><ref refid="dc/d09/namespace_main_1aad33940e3c3aecc747de02d073e8ef90" kindref="member">TimerEnd</ref>()</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Time<sp/>=<sp/><ref refid="dc/d09/namespace_main_1acdc63151e37b23f383d2cdaee1224915" kindref="member">SetTime</ref>(StartTime,<sp/>EndTime)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a3dea03126fc26dc32fa78d9668c2fe9d" kindref="member">Checker</ref>(UserPhraseSplitted,<sp/>MainPhraseSplitted)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a1d01b0f3654eb2b5a68c9f9ebc30a76f" kindref="member">PhraseSplit</ref>(UserInput,<sp/>UserPhraseSplitted)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a91347ff47fc2acd8750dc2f72dc91e0e" kindref="member">Accuracy</ref>()</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a30424fcb6e4b7f7c1d17d854078fc7d1" kindref="member">WriteTime</ref>(Time,<sp/>AccuracyPercent,<sp/>__class__.__name__)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(Time)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="dc/d09/namespace_main_1a1d01b0f3654eb2b5a68c9f9ebc30a76f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="dc/d09/namespace_main_1a1d01b0f3654eb2b5a68c9f9ebc30a76f" kindref="member">PhraseSplit</ref>(SplittingPhrase,<sp/>List):</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="111"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>function<sp/>`PhraseSplit`<sp/>takes<sp/>a<sp/>phrase<sp/>and<sp/>appends<sp/>each<sp/>letter<sp/>to<sp/>a<sp/>given<sp/>list.</highlight></codeline>
+<codeline lineno="112"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="113"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:param<sp/>SplittingPhrase:<sp/>The<sp/>`SplittingPhrase`<sp/>parameter<sp/>is<sp/>the<sp/>phrase<sp/>or<sp/>string<sp/>that<sp/>you<sp/>want<sp/>to</highlight></codeline>
+<codeline lineno="114"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>split<sp/>into<sp/>individual<sp/>letters</highlight></codeline>
+<codeline lineno="115"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:param<sp/>List:<sp/>The<sp/>`List`<sp/>parameter<sp/>in<sp/>the<sp/>`PhraseSplit`<sp/>function<sp/>is<sp/>a<sp/>list<sp/>that<sp/>will<sp/>store<sp/>the</highlight></codeline>
+<codeline lineno="116"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>individual<sp/>letters<sp/>of<sp/>the<sp/>`SplittingPhrase`<sp/>after<sp/>splitting</highlight></codeline>
+<codeline lineno="117"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>Letter<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>SplittingPhrase:</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>List.append(Letter)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="dc/d09/namespace_main_1ade6a1244786f64f5339dc08d360b4656" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="dc/d09/namespace_main_1ade6a1244786f64f5339dc08d360b4656" kindref="member">TimerStart</ref>():</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="123"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>function<sp/>`TimerStart()`<sp/>returns<sp/>the<sp/>current<sp/>time<sp/>when<sp/>called.</highlight></codeline>
+<codeline lineno="124"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:return:<sp/>The<sp/>`TimerStart()`<sp/>function<sp/>is<sp/>returning<sp/>the<sp/>current<sp/>time<sp/>when<sp/>it<sp/>is<sp/>called<sp/>using</highlight></codeline>
+<codeline lineno="125"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`time.time()`.</highlight></codeline>
+<codeline lineno="126"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>time.time()</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="dc/d09/namespace_main_1aad33940e3c3aecc747de02d073e8ef90" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="dc/d09/namespace_main_1aad33940e3c3aecc747de02d073e8ef90" kindref="member">TimerEnd</ref>():</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="131"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>function<sp/>`TimerEnd`<sp/>returns<sp/>the<sp/>current<sp/>time<sp/>when<sp/>called.</highlight></codeline>
+<codeline lineno="132"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:return:<sp/>The<sp/>function<sp/>`TimerEnd()`<sp/>is<sp/>returning<sp/>the<sp/>current<sp/>time<sp/>when<sp/>it<sp/>is<sp/>called<sp/>using</highlight></codeline>
+<codeline lineno="133"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`time.time()`.</highlight></codeline>
+<codeline lineno="134"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>time.time()</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="dc/d09/namespace_main_1abb8688485662cdab50dd3a21be5bd011" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="dc/d09/namespace_main_1abb8688485662cdab50dd3a21be5bd011" kindref="member">MakeStartUserDir</ref>():</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="139"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>function<sp/>attempts<sp/>to<sp/>create<sp/>a<sp/>Users<sp/>folder<sp/>if<sp/>it<sp/>does<sp/>not<sp/>already<sp/>exist.</highlight></codeline>
+<codeline lineno="140"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">#<sp/>Make<sp/>the<sp/>Users<sp/>Folder<sp/>if<sp/>it<sp/>doesn&apos;t<sp/>exist</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os.mkdir(CreateUserDir)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="dc/d09/namespace_main_1a1cb922774e428172dfd6fdc29f151ea1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="dc/d09/namespace_main_1a1cb922774e428172dfd6fdc29f151ea1" kindref="member">SignUp</ref>():</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="148"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>function<sp/>`SignUp`<sp/>prompts<sp/>the<sp/>user<sp/>to<sp/>enter<sp/>a<sp/>username,<sp/>creates<sp/>a<sp/>directory<sp/>with<sp/>that<sp/>username,</highlight></codeline>
+<codeline lineno="149"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>and<sp/>handles<sp/>cases<sp/>where<sp/>the<sp/>username<sp/>already<sp/>exists.</highlight></codeline>
+<codeline lineno="150"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>UserName<sp/>=<sp/>input(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>your<sp/>Username:<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>UserDir<sp/>=<sp/>os.path.join(OSUserDirectory,<sp/>UserName)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os.mkdir(UserDir)</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;That<sp/>User<sp/>Already<sp/>Exists<sp/>try<sp/>again<sp/>\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a1cb922774e428172dfd6fdc29f151ea1" kindref="member">SignUp</ref>()</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="dc/d09/namespace_main_1a90e0a9375c99e2b6358a9719e0d98564" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="dc/d09/namespace_main_1a90e0a9375c99e2b6358a9719e0d98564" kindref="member">Login</ref>():</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="161"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>`Login`<sp/>function<sp/>prompts<sp/>the<sp/>user<sp/>to<sp/>enter<sp/>a<sp/>username,<sp/>creates<sp/>a<sp/>directory<sp/>for<sp/>the<sp/>user,<sp/>and</highlight></codeline>
+<codeline lineno="162"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>handles<sp/>login<sp/>success<sp/>or<sp/>failure.</highlight></codeline>
+<codeline lineno="163"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">global</highlight><highlight class="normal"><sp/>CurrentUser</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>CurrentUser<sp/>=<sp/>input(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>username:<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>UserDir<sp/>=<sp/>os.path.join(OSUserDirectory,<sp/>CurrentUser)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os.mkdir(UserDir)</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">#<sp/>If<sp/>successful<sp/>login</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Success&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;User<sp/>doesn&apos;t<sp/>exist...<sp/>Try<sp/>again\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os.rmdir(UserDir)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a90e0a9375c99e2b6358a9719e0d98564" kindref="member">Login</ref>()</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="dc/d09/namespace_main_1a5208611bd9857e271f1f29adfaf6d486" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="dc/d09/namespace_main_1a5208611bd9857e271f1f29adfaf6d486" kindref="member">LoginSignupChoise</ref>():</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="179"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>function<sp/>`LoginSignupChoise`<sp/>prompts<sp/>the<sp/>user<sp/>to<sp/>choose<sp/>between<sp/>logging<sp/>in<sp/>or<sp/>signing<sp/>up<sp/>and</highlight></codeline>
+<codeline lineno="180"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>then<sp/>calls<sp/>the<sp/>respective<sp/>functions<sp/>based<sp/>on<sp/>the<sp/>user&apos;s<sp/>choice.</highlight></codeline>
+<codeline lineno="181"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>Login_Signup<sp/>=<sp/>input(</highlight><highlight class="stringliteral">&quot;Do<sp/>you<sp/>want<sp/>to<sp/>log<sp/>in<sp/>(L)<sp/>or<sp/>sign<sp/>up<sp/>(S)?\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>Login_Signup.lower()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;l&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a90e0a9375c99e2b6358a9719e0d98564" kindref="member">Login</ref>()</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>Login_Signup.lower()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;s&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a1cb922774e428172dfd6fdc29f151ea1" kindref="member">SignUp</ref>()</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(f</highlight><highlight class="stringliteral">&quot;Something<sp/>went<sp/>wrong,<sp/>try<sp/>again&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a5208611bd9857e271f1f29adfaf6d486" kindref="member">LoginSignupChoise</ref>()</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="dc/d09/namespace_main_1acdc63151e37b23f383d2cdaee1224915" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="dc/d09/namespace_main_1acdc63151e37b23f383d2cdaee1224915" kindref="member">SetTime</ref>(StartTime,<sp/>EndTime):</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="195"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>function<sp/>SetTime<sp/>calculates<sp/>the<sp/>difference<sp/>in<sp/>time<sp/>between<sp/>a<sp/>start<sp/>time<sp/>and<sp/>an<sp/>end<sp/>time.</highlight></codeline>
+<codeline lineno="196"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="197"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:param<sp/>StartTime:<sp/>The<sp/>`StartTime`<sp/>parameter<sp/>represents<sp/>the<sp/>starting<sp/>time,<sp/>typically<sp/>in<sp/>a<sp/>numerical</highlight></codeline>
+<codeline lineno="198"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>format<sp/>such<sp/>as<sp/>a<sp/>timestamp<sp/>or<sp/>a<sp/>numerical<sp/>value<sp/>representing<sp/>a<sp/>specific<sp/>time</highlight></codeline>
+<codeline lineno="199"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:param<sp/>EndTime:<sp/>The<sp/>`EndTime`<sp/>parameter<sp/>represents<sp/>the<sp/>time<sp/>at<sp/>which<sp/>a<sp/>particular<sp/>event<sp/>or<sp/>process</highlight></codeline>
+<codeline lineno="200"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>ends.<sp/>It<sp/>could<sp/>be<sp/>a<sp/>specific<sp/>point<sp/>in<sp/>time,<sp/>such<sp/>as<sp/>the<sp/>end<sp/>of<sp/>a<sp/>task<sp/>or<sp/>the<sp/>completion<sp/>of<sp/>an</highlight></codeline>
+<codeline lineno="201"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>activity</highlight></codeline>
+<codeline lineno="202"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:return:<sp/>The<sp/>function<sp/>`SetTime`<sp/>returns<sp/>the<sp/>difference<sp/>between<sp/>`EndTime`<sp/>and<sp/>`StartTime`<sp/>as<sp/>an</highlight></codeline>
+<codeline lineno="203"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>integer.</highlight></codeline>
+<codeline lineno="204"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>int(EndTime<sp/>-<sp/>StartTime)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="dc/d09/namespace_main_1a30424fcb6e4b7f7c1d17d854078fc7d1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="dc/d09/namespace_main_1a30424fcb6e4b7f7c1d17d854078fc7d1" kindref="member">WriteTime</ref>(time,<sp/>accuracy,<sp/>difficulty):</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="210"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>function<sp/>`WriteTime`<sp/>writes<sp/>time-related<sp/>data<sp/>to<sp/>a<sp/>text<sp/>file<sp/>in<sp/>a<sp/>specified<sp/>directory.</highlight></codeline>
+<codeline lineno="211"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="212"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:param<sp/>time:<sp/>The<sp/>`time`<sp/>parameter<sp/>in<sp/>the<sp/>`WriteTime`<sp/>function<sp/>represents<sp/>the<sp/>amount<sp/>of<sp/>time<sp/>taken<sp/>to</highlight></codeline>
+<codeline lineno="213"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>complete<sp/>a<sp/>task<sp/>or<sp/>activity,<sp/>typically<sp/>measured<sp/>in<sp/>seconds</highlight></codeline>
+<codeline lineno="214"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:param<sp/>accuracy:<sp/>Accuracy<sp/>refers<sp/>to<sp/>how<sp/>close<sp/>a<sp/>measured<sp/>value<sp/>is<sp/>to<sp/>the<sp/>true<sp/>value.<sp/>It<sp/>is<sp/>often</highlight></codeline>
+<codeline lineno="215"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>expressed<sp/>as<sp/>a<sp/>percentage<sp/>and<sp/>indicates<sp/>the<sp/>precision<sp/>of<sp/>the<sp/>measurement.<sp/>In<sp/>the<sp/>context<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="216"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`WriteTime`<sp/>function<sp/>you<sp/>provided,<sp/>accuracy<sp/>would<sp/>likely<sp/>refer<sp/>to<sp/>the<sp/>precision<sp/>or<sp/>correctness<sp/>of</highlight></codeline>
+<codeline lineno="217"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>the<sp/>time<sp/>measurement<sp/>or<sp/>task<sp/>completion</highlight></codeline>
+<codeline lineno="218"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:param<sp/>difficulty:<sp/>The<sp/>`WriteTime`<sp/>function<sp/>you<sp/>provided<sp/>seems<sp/>to<sp/>be<sp/>writing<sp/>some<sp/>information<sp/>to<sp/>a</highlight></codeline>
+<codeline lineno="219"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>text<sp/>file.<sp/>However,<sp/>it<sp/>seems<sp/>like<sp/>you<sp/>haven&apos;t<sp/>defined<sp/>`CurrentUser`,<sp/>`CurrentDate`,<sp/>and</highlight></codeline>
+<codeline lineno="220"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`CurrentTime`<sp/>in<sp/>the<sp/>function.<sp/>You<sp/>will<sp/>need<sp/>to<sp/>pass<sp/>these<sp/>variables<sp/>as<sp/>arguments<sp/>to<sp/>the<sp/>function<sp/>or</highlight></codeline>
+<codeline lineno="221"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>define<sp/>them<sp/>within</highlight></codeline>
+<codeline lineno="222"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>Directory<sp/>=<sp/>f</highlight><highlight class="stringliteral">&quot;{os.getcwd()}/Users/{CurrentUser}&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>Place<sp/>=<sp/>os.path.join(Directory,<sp/>f</highlight><highlight class="stringliteral">&quot;{CurrentDate}<sp/>{CurrentTime}.txt&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>open(Place,<sp/></highlight><highlight class="stringliteral">&quot;w&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>File:</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>File.write(f</highlight><highlight class="stringliteral">&quot;Date:<sp/>{CurrentDate}\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>File.write(f</highlight><highlight class="stringliteral">&quot;Clock<sp/>Time:<sp/>{CurrentTime}\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>File.write(f</highlight><highlight class="stringliteral">&quot;Difficulty:<sp/>{difficulty}\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>File.write(f</highlight><highlight class="stringliteral">&quot;Your<sp/>Time:<sp/>{time}<sp/>secs<sp/>\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>File.write(f</highlight><highlight class="stringliteral">&quot;Your<sp/>accuracy:<sp/>{accuracy}%\n&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="dc/d09/namespace_main_1a3dea03126fc26dc32fa78d9668c2fe9d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="dc/d09/namespace_main_1a3dea03126fc26dc32fa78d9668c2fe9d" kindref="member">Checker</ref>(Phrase1,<sp/>Phrase2):</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="234"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>function<sp/>`Checker`<sp/>compares<sp/>two<sp/>phrases<sp/>character<sp/>by<sp/>character<sp/>and<sp/>counts<sp/>the<sp/>number<sp/>of<sp/>correct</highlight></codeline>
+<codeline lineno="235"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>matches.</highlight></codeline>
+<codeline lineno="236"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="237"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:param<sp/>Phrase1:<sp/>The<sp/>function<sp/>`Checker`<sp/>takes<sp/>two<sp/>input<sp/>parameters<sp/>`Phrase1`<sp/>and<sp/>`Phrase2`,<sp/>which<sp/>are</highlight></codeline>
+<codeline lineno="238"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>strings<sp/>that<sp/>are<sp/>being<sp/>compared<sp/>character<sp/>by<sp/>character.<sp/>The<sp/>function<sp/>then<sp/>counts<sp/>the<sp/>number<sp/>of</highlight></codeline>
+<codeline lineno="239"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>characters<sp/>that<sp/>match<sp/>at<sp/>the<sp/>same<sp/>position<sp/>in<sp/>both<sp/>phrases<sp/>and<sp/>stores<sp/>the<sp/>count<sp/>in<sp/>the<sp/>global</highlight></codeline>
+<codeline lineno="240"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>variable<sp/>`CorrectCounter`</highlight></codeline>
+<codeline lineno="241"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>:param<sp/>Phrase2:<sp/>It<sp/>looks<sp/>like<sp/>you<sp/>have<sp/>defined<sp/>a<sp/>function<sp/>called<sp/>`Checker`<sp/>that<sp/>takes<sp/>two<sp/>parameters</highlight></codeline>
+<codeline lineno="242"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`Phrase1`<sp/>and<sp/>`Phrase2`.<sp/>The<sp/>function<sp/>compares<sp/>the<sp/>characters<sp/>at<sp/>each<sp/>index<sp/>of<sp/>`Phrase1`<sp/>and</highlight></codeline>
+<codeline lineno="243"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`Phrase2`,<sp/>and<sp/>increments<sp/>a<sp/>global<sp/>variable<sp/>`CorrectCounter`<sp/>if<sp/>the<sp/>characters<sp/>match</highlight></codeline>
+<codeline lineno="244"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">global</highlight><highlight class="normal"><sp/>CorrectCounter</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>CorrectCounter<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>index<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(len(Phrase1)):</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>Phrase1[index]<sp/>==<sp/>Phrase2[index]:</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CorrectCounter<sp/>+=<sp/>1</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="253" refid="dc/d09/namespace_main_1a91347ff47fc2acd8750dc2f72dc91e0e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="dc/d09/namespace_main_1a91347ff47fc2acd8750dc2f72dc91e0e" kindref="member">Accuracy</ref>():</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="255"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>`Accuracy`<sp/>function<sp/>calculates<sp/>the<sp/>accuracy<sp/>percentage<sp/>of<sp/>a<sp/>user&apos;s<sp/>input<sp/>compared<sp/>to<sp/>a<sp/>main</highlight></codeline>
+<codeline lineno="256"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>phrase<sp/>by<sp/>checking<sp/>the<sp/>correctness<sp/>of<sp/>each<sp/>word.</highlight></codeline>
+<codeline lineno="257"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(MainPhraseSplitted)<sp/>&gt;=<sp/>len(UserPhraseSplitted):</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a3dea03126fc26dc32fa78d9668c2fe9d" kindref="member">Checker</ref>(UserPhraseSplitted,<sp/>MainPhraseSplitted)</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a3dea03126fc26dc32fa78d9668c2fe9d" kindref="member">Checker</ref>(MainPhraseSplitted,UserPhraseSplitted)</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">global</highlight><highlight class="normal"><sp/>AccuracyPercent</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>CorrectCounter<sp/>!=<sp/>0:</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AccuracyPercent<sp/>=<sp/>int(CorrectCounter/len(MainPhraseSplitted)*100)</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AccuracyPercent<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="dc/d09/namespace_main_1a45dc92198c91285a47318d604e536768" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="dc/d09/namespace_main_1a45dc92198c91285a47318d604e536768" kindref="member">ChooseDifficulty</ref>():</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="271"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>function<sp/>ChooseDifficulty<sp/>allows<sp/>the<sp/>user<sp/>to<sp/>select<sp/>a<sp/>desired<sp/>difficulty<sp/>level<sp/>(Beginner,</highlight></codeline>
+<codeline lineno="272"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Intermediate,<sp/>Expert)<sp/>for<sp/>a<sp/>game.</highlight></codeline>
+<codeline lineno="273"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>Difficulty<sp/>=<sp/>input(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>you<sp/>disired<sp/>difficulty:\nBeginner<sp/>(B)\nIntermidiate<sp/>(I)\nExpert<sp/>(E)\n&quot;</highlight><highlight class="normal">).lower()</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>Difficulty<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;b&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d2/d0b/class_main_1_1_beginner" kindref="compound">Beginner</ref>()</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>Difficulty<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;i&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d02/class_main_1_1_intermidiate" kindref="compound">Intermidiate</ref>()</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>Difficulty<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;e&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d1d/class_main_1_1_expert" kindref="compound">Expert</ref>()</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;didn&apos;t<sp/>understand:<sp/>Please<sp/>try<sp/>again&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a45dc92198c91285a47318d604e536768" kindref="member">ChooseDifficulty</ref>()</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>__name__<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;__main__&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d09/namespace_main_1a45dc92198c91285a47318d604e536768" kindref="member">ChooseDifficulty</ref>()</highlight></codeline>
+    </programlisting>
+    <location file="Main.py"/>
+  </compounddef>
+</doxygen>

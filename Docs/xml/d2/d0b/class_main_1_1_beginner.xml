@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="d2/d0b/class_main_1_1_beginner" kind="class" language="Python" prot="public">
+    <compoundname>Main::Beginner</compoundname>
+    <basecompoundref refid="db/d1f/class_main_1_1_parrent" prot="public" virt="non-virtual">Main.Parrent</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d0b/class_main_1_1_beginner_1a27cd5307b220e55ffba9fa4841ad8b4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Main.Beginner.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>Main.Beginner.__init__</qualifiedname>
+        <reimplements refid="db/d1f/class_main_1_1_parrent_1a0d4f0b11961e6fba99cf118fd1207fbd">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Main.py" line="39" column="1" bodyfile="Main.py" bodystart="39" bodyend="61"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Main.Beginner</label>
+        <link refid="d2/d0b/class_main_1_1_beginner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Main.Parrent</label>
+        <link refid="db/d1f/class_main_1_1_parrent"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Main.Beginner</label>
+        <link refid="d2/d0b/class_main_1_1_beginner"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Main.Parrent</label>
+        <link refid="db/d1f/class_main_1_1_parrent"/>
+      </node>
+    </collaborationgraph>
+    <location file="Main.py" line="38" column="1" bodyfile="Main.py" bodystart="38" bodyend="61"/>
+    <listofallmembers>
+      <member refid="d2/d0b/class_main_1_1_beginner_1a27cd5307b220e55ffba9fa4841ad8b4b" prot="public" virt="non-virtual"><scope>Main::Beginner</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

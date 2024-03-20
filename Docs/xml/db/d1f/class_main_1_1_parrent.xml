@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="db/d1f/class_main_1_1_parrent" kind="class" language="Python" prot="public">
+    <compoundname>Main::Parrent</compoundname>
+    <derivedcompoundref refid="d2/d0b/class_main_1_1_beginner" prot="public" virt="non-virtual">Main.Beginner</derivedcompoundref>
+    <derivedcompoundref refid="d3/d1d/class_main_1_1_expert" prot="public" virt="non-virtual">Main.Expert</derivedcompoundref>
+    <derivedcompoundref refid="da/d02/class_main_1_1_intermidiate" prot="public" virt="non-virtual">Main.Intermidiate</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d1f/class_main_1_1_parrent_1a0d4f0b11961e6fba99cf118fd1207fbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Main.Parrent.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>Main.Parrent.__init__</qualifiedname>
+        <reimplementedby refid="d2/d0b/class_main_1_1_beginner_1a27cd5307b220e55ffba9fa4841ad8b4b">__init__</reimplementedby>
+        <reimplementedby refid="da/d02/class_main_1_1_intermidiate_1a44a353367883c6128f03a016a87f36e3">__init__</reimplementedby>
+        <reimplementedby refid="d3/d1d/class_main_1_1_expert_1ac75b8e039a48ae806574ed64c7670498">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Main.py" line="29" column="1" bodyfile="Main.py" bodystart="29" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Main.Parrent</label>
+        <link refid="db/d1f/class_main_1_1_parrent"/>
+      </node>
+      <node id="2">
+        <label>Main.Beginner</label>
+        <link refid="d2/d0b/class_main_1_1_beginner"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Main.Expert</label>
+        <link refid="d3/d1d/class_main_1_1_expert"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Main.Intermidiate</label>
+        <link refid="da/d02/class_main_1_1_intermidiate"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Main.py" line="28" column="1" bodyfile="Main.py" bodystart="28" bodyend="37"/>
+    <listofallmembers>
+      <member refid="db/d1f/class_main_1_1_parrent_1a0d4f0b11961e6fba99cf118fd1207fbd" prot="public" virt="non-virtual"><scope>Main::Parrent</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

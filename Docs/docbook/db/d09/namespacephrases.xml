@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacephrases" xml:lang="en-US">
+<title>phrases Namespace Reference</title>
+<indexterm><primary>phrases</primary></indexterm>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>list <link linkend="_namespacephrases_1aad150bc2274f15b5d6f1663eb20a40a7">TestPhrase</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacephrases_1aa1e4f49ba414f7521697b3c5e357a9f5">BeginnerPhrase</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacephrases_1aed96c55bca7e26da0b6615c98b081203">IntiermidiatePhrase</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacephrases_1ad7a9c84b340b3d9a1a444165994d12fd">ExpertPhrase</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacephrases_1aa1e4f49ba414f7521697b3c5e357a9f5"/><section>
+    <title>BeginnerPhrase</title>
+<indexterm><primary>BeginnerPhrase</primary><secondary>phrases</secondary></indexterm>
+<indexterm><primary>phrases</primary><secondary>BeginnerPhrase</secondary></indexterm>
+<para><computeroutput>list phrases.BeginnerPhrase</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">00001 =&#32;&#32;[
+00002 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;BegTest&quot;</emphasis>
+00003 ]
+</programlisting><para>
+Definition at line <link linkend="_phrases_8py_source_1l00005">5</link> of file <link linkend="_phrases_8py_source">phrases.py</link>.</para>
+</section>
+<anchor xml:id="_namespacephrases_1ad7a9c84b340b3d9a1a444165994d12fd"/><section>
+    <title>ExpertPhrase</title>
+<indexterm><primary>ExpertPhrase</primary><secondary>phrases</secondary></indexterm>
+<indexterm><primary>phrases</primary><secondary>ExpertPhrase</secondary></indexterm>
+<para><computeroutput>list phrases.ExpertPhrase</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">00001 =&#32;&#32;[
+00002 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;ExpTest&quot;</emphasis>
+00003 ]
+</programlisting><para>
+Definition at line <link linkend="_phrases_8py_source_1l00013">13</link> of file <link linkend="_phrases_8py_source">phrases.py</link>.</para>
+</section>
+<anchor xml:id="_namespacephrases_1aed96c55bca7e26da0b6615c98b081203"/><section>
+    <title>IntiermidiatePhrase</title>
+<indexterm><primary>IntiermidiatePhrase</primary><secondary>phrases</secondary></indexterm>
+<indexterm><primary>phrases</primary><secondary>IntiermidiatePhrase</secondary></indexterm>
+<para><computeroutput>list phrases.IntiermidiatePhrase</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">00001 =&#32;&#32;[
+00002 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;InterTest&quot;</emphasis>
+00003 ]
+</programlisting><para>
+Definition at line <link linkend="_phrases_8py_source_1l00009">9</link> of file <link linkend="_phrases_8py_source">phrases.py</link>.</para>
+</section>
+<anchor xml:id="_namespacephrases_1aad150bc2274f15b5d6f1663eb20a40a7"/><section>
+    <title>TestPhrase</title>
+<indexterm><primary>TestPhrase</primary><secondary>phrases</secondary></indexterm>
+<indexterm><primary>phrases</primary><secondary>TestPhrase</secondary></indexterm>
+<para><computeroutput>list phrases.TestPhrase</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">00001 =&#32;&#32;[
+00002 &#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;Jeg&#32;er&#32;en&#32;taberabe&quot;</emphasis>,
+00003 ]
+</programlisting><para>
+Definition at line <link linkend="_phrases_8py_source_1l00001">1</link> of file <link linkend="_phrases_8py_source">phrases.py</link>.</para>
+</section>
+</section>
+</section>

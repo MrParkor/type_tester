@@ -1,0 +1,319 @@
+.TH "Main" 3 "Wed Mar 20 2024 11:46:46" "Type Tester" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Main
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBBeginner\fP"
+.br
+.ti -1c
+.RI "class \fBExpert\fP"
+.br
+.ti -1c
+.RI "class \fBIntermidiate\fP"
+.br
+.ti -1c
+.RI "class \fBParrent\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPhraseSplit\fP (SplittingPhrase, List)"
+.br
+.ti -1c
+.RI "\fBTimerStart\fP ()"
+.br
+.ti -1c
+.RI "\fBTimerEnd\fP ()"
+.br
+.ti -1c
+.RI "\fBMakeStartUserDir\fP ()"
+.br
+.ti -1c
+.RI "\fBSignUp\fP ()"
+.br
+.ti -1c
+.RI "\fBLogin\fP ()"
+.br
+.ti -1c
+.RI "\fBLoginSignupChoise\fP ()"
+.br
+.ti -1c
+.RI "\fBSetTime\fP (StartTime, EndTime)"
+.br
+.ti -1c
+.RI "\fBWriteTime\fP (time, accuracy, difficulty)"
+.br
+.ti -1c
+.RI "\fBChecker\fP (Phrase1, Phrase2)"
+.br
+.ti -1c
+.RI "\fBAccuracy\fP ()"
+.br
+.ti -1c
+.RI "\fBChooseDifficulty\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBnow\fP = datetime\&.datetime\&.now()"
+.br
+.ti -1c
+.RI "\fBCurrentDate\fP = str(now\&.strftime('%d\-%m\-%Y'))"
+.br
+.ti -1c
+.RI "\fBCurrentTime\fP = str(now\&.strftime('%H\&.%M'))"
+.br
+.ti -1c
+.RI "\fBCurrentDirectory\fP = os\&.getcwd()"
+.br
+.ti -1c
+.RI "\fBCreateUserDir\fP = os\&.path\&.join(\fBCurrentDirectory\fP, 'Users')"
+.br
+.ti -1c
+.RI "str \fBUsersDirectory\fP = f'{\fBCurrentDirectory\fP}/Users'"
+.br
+.ti -1c
+.RI "\fBOSUserDirectory\fP = os\&.path\&.join(\fBUsersDirectory\fP)"
+.br
+.ti -1c
+.RI "\fBTestPhraseType\fP = \fBTestPhrase\fP[randint(0,len(\fBTestPhrase\fP)\-1)]"
+.br
+.ti -1c
+.RI "list \fBMainPhraseSplitted\fP = []"
+.br
+.ti -1c
+.RI "list \fBUserPhraseSplitted\fP = []"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "Main\&.Accuracy ()"
+
+.PP
+.nf
+The `Accuracy` function calculates the accuracy percentage of a user's input compared to a main
+phrase by checking the correctness of each word\&.
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB253\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.Checker ( Phrase1,  Phrase2)"
+
+.PP
+.nf
+The function `Checker` compares two phrases character by character and counts the number of correct
+matches\&.
+
+:param Phrase1: The function `Checker` takes two input parameters `Phrase1` and `Phrase2`, which are
+strings that are being compared character by character\&. The function then counts the number of
+characters that match at the same position in both phrases and stores the count in the global
+variable `CorrectCounter`
+:param Phrase2: It looks like you have defined a function called `Checker` that takes two parameters
+`Phrase1` and `Phrase2`\&. The function compares the characters at each index of `Phrase1` and
+`Phrase2`, and increments a global variable `CorrectCounter` if the characters match
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB232\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.ChooseDifficulty ()"
+
+.PP
+.nf
+The function ChooseDifficulty allows the user to select a desired difficulty level (Beginner,
+Intermediate, Expert) for a game\&.
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB269\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.Login ()"
+
+.PP
+.nf
+The `Login` function prompts the user to enter a username, creates a directory for the user, and
+handles login success or failure\&.
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB159\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.LoginSignupChoise ()"
+
+.PP
+.nf
+The function `LoginSignupChoise` prompts the user to choose between logging in or signing up and
+then calls the respective functions based on the user's choice\&.
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB177\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.MakeStartUserDir ()"
+
+.PP
+.nf
+The function attempts to create a Users folder if it does not already exist\&.
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB137\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.PhraseSplit ( SplittingPhrase,  List)"
+
+.PP
+.nf
+The function `PhraseSplit` takes a phrase and appends each letter to a given list\&.
+
+:param SplittingPhrase: The `SplittingPhrase` parameter is the phrase or string that you want to
+split into individual letters
+:param List: The `List` parameter in the `PhraseSplit` function is a list that will store the
+individual letters of the `SplittingPhrase` after splitting
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB109\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.SetTime ( StartTime,  EndTime)"
+
+.PP
+.nf
+The function SetTime calculates the difference in time between a start time and an end time\&.
+
+:param StartTime: The `StartTime` parameter represents the starting time, typically in a numerical
+format such as a timestamp or a numerical value representing a specific time
+:param EndTime: The `EndTime` parameter represents the time at which a particular event or process
+ends\&. It could be a specific point in time, such as the end of a task or the completion of an
+activity
+:return: The function `SetTime` returns the difference between `EndTime` and `StartTime` as an
+integer\&.
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB193\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.SignUp ()"
+
+.PP
+.nf
+The function `SignUp` prompts the user to enter a username, creates a directory with that username,
+and handles cases where the username already exists\&.
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB146\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.TimerEnd ()"
+
+.PP
+.nf
+The function `TimerEnd` returns the current time when called\&.
+:return: The function `TimerEnd()` is returning the current time when it is called using
+`time\&.time()`\&.
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB129\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.TimerStart ()"
+
+.PP
+.nf
+The function `TimerStart()` returns the current time when called\&.
+:return: The `TimerStart()` function is returning the current time when it is called using
+`time\&.time()`\&.
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB121\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.WriteTime ( time,  accuracy,  difficulty)"
+
+.PP
+.nf
+The function `WriteTime` writes time-related data to a text file in a specified directory\&.
+
+:param time: The `time` parameter in the `WriteTime` function represents the amount of time taken to
+complete a task or activity, typically measured in seconds
+:param accuracy: Accuracy refers to how close a measured value is to the true value\&. It is often
+expressed as a percentage and indicates the precision of the measurement\&. In the context of the
+`WriteTime` function you provided, accuracy would likely refer to the precision or correctness of
+the time measurement or task completion
+:param difficulty: The `WriteTime` function you provided seems to be writing some information to a
+text file\&. However, it seems like you haven't defined `CurrentUser`, `CurrentDate`, and
+`CurrentTime` in the function\&. You will need to pass these variables as arguments to the function or
+define them within
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB208\fP of file \fBMain\&.py\fP\&.
+.SH "Variable Documentation"
+.PP 
+.SS "Main\&.CreateUserDir = os\&.path\&.join(\fBCurrentDirectory\fP, 'Users')"
+
+.PP
+Definition at line \fB16\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.CurrentDate = str(now\&.strftime('%d\-%m\-%Y'))"
+
+.PP
+Definition at line \fB12\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.CurrentDirectory = os\&.getcwd()"
+
+.PP
+Definition at line \fB15\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.CurrentTime = str(now\&.strftime('%H\&.%M'))"
+
+.PP
+Definition at line \fB13\fP of file \fBMain\&.py\fP\&.
+.SS "list Main\&.MainPhraseSplitted = []"
+
+.PP
+Definition at line \fB21\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.now = datetime\&.datetime\&.now()"
+
+.PP
+Definition at line \fB11\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.OSUserDirectory = os\&.path\&.join(\fBUsersDirectory\fP)"
+
+.PP
+Definition at line \fB18\fP of file \fBMain\&.py\fP\&.
+.SS "Main\&.TestPhraseType = \fBTestPhrase\fP[randint(0,len(\fBTestPhrase\fP)\-1)]"
+
+.PP
+Definition at line \fB20\fP of file \fBMain\&.py\fP\&.
+.SS "list Main\&.UserPhraseSplitted = []"
+
+.PP
+Definition at line \fB22\fP of file \fBMain\&.py\fP\&.
+.SS "str Main\&.UsersDirectory = f'{\fBCurrentDirectory\fP}/Users'"
+
+.PP
+Definition at line \fB17\fP of file \fBMain\&.py\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Type Tester from the source code\&.

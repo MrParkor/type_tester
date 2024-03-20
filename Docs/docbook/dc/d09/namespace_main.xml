@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_main" xml:lang="en-US">
+<title>Main Namespace Reference</title>
+<indexterm><primary>Main</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_main_1_1_beginner">Beginner</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_main_1_1_expert">Expert</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_main_1_1_intermidiate">Intermidiate</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_main_1_1_parrent">Parrent</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_main_1a1d01b0f3654eb2b5a68c9f9ebc30a76f">PhraseSplit</link> (SplittingPhrase, List)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1ade6a1244786f64f5339dc08d360b4656">TimerStart</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1aad33940e3c3aecc747de02d073e8ef90">TimerEnd</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1abb8688485662cdab50dd3a21be5bd011">MakeStartUserDir</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1a1cb922774e428172dfd6fdc29f151ea1">SignUp</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1a90e0a9375c99e2b6358a9719e0d98564">Login</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1a5208611bd9857e271f1f29adfaf6d486">LoginSignupChoise</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1acdc63151e37b23f383d2cdaee1224915">SetTime</link> (StartTime, EndTime)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1a30424fcb6e4b7f7c1d17d854078fc7d1">WriteTime</link> (time, accuracy, difficulty)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1a3dea03126fc26dc32fa78d9668c2fe9d">Checker</link> (Phrase1, Phrase2)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1a91347ff47fc2acd8750dc2f72dc91e0e">Accuracy</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1a45dc92198c91285a47318d604e536768">ChooseDifficulty</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespace_main_1afb87e9c2cd127261c128cd6522c8613c">now</link> = datetime.datetime.now()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1a4e23762ea59613a42985604a0cedbd86">CurrentDate</link> = str(now.strftime(&quot;%d-%m-%Y&quot;))</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1a8689c769cd84287a04dc7c8d27774f9e">CurrentTime</link> = str(now.strftime(&quot;%H.%M&quot;))</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1a130601c3bd8356a1a32d413cd468a2c7">CurrentDirectory</link> = os.getcwd()</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1afdeb3521e270ae29c9d7a67f1e8d8691">CreateUserDir</link> = os.path.join(<link linkend="_namespace_main_1a130601c3bd8356a1a32d413cd468a2c7">CurrentDirectory</link>, &quot;Users&quot;)</para>
+</listitem>
+            <listitem><para>str <link linkend="_namespace_main_1aadca5f678e366137bdf1fedbb6cc58ad">UsersDirectory</link> = f&quot;{<link linkend="_namespace_main_1a130601c3bd8356a1a32d413cd468a2c7">CurrentDirectory</link>}/Users&quot;</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1ad2eac4f47d5a5b9d2402584bc7291c4e">OSUserDirectory</link> = os.path.join(<link linkend="_namespace_main_1aadca5f678e366137bdf1fedbb6cc58ad">UsersDirectory</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_namespace_main_1ac8f9d70642442b220e9d42af4be6268d">TestPhraseType</link> = <link linkend="_namespacephrases_1aad150bc2274f15b5d6f1663eb20a40a7">TestPhrase</link>[randint(0,len(<link linkend="_namespacephrases_1aad150bc2274f15b5d6f1663eb20a40a7">TestPhrase</link>)-1)]</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespace_main_1ae47844a282521a252f4a2b31eb88e52c">MainPhraseSplitted</link> = []</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespace_main_1a754949a4060496aabeadc57c09b5bef5">UserPhraseSplitted</link> = []</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_namespace_main_1a91347ff47fc2acd8750dc2f72dc91e0e"/><section>
+    <title>Accuracy()</title>
+<indexterm><primary>Accuracy</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>Accuracy</secondary></indexterm>
+<para><computeroutput>Main.Accuracy ( )</computeroutput></para>
+<para><literallayout><computeroutput>The `Accuracy` function calculates the accuracy percentage of a user&apos;s input compared to a main
+phrase by checking the correctness of each word.
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="__main_8py_source_1l00253">253</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1a3dea03126fc26dc32fa78d9668c2fe9d"/><section>
+    <title>Checker()</title>
+<indexterm><primary>Checker</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>Checker</secondary></indexterm>
+<para><computeroutput>Main.Checker ( Phrase1,  Phrase2)</computeroutput></para>
+<para><literallayout><computeroutput>The function `Checker` compares two phrases character by character and counts the number of correct
+matches.
+
+:param Phrase1: The function `Checker` takes two input parameters `Phrase1` and `Phrase2`, which are
+strings that are being compared character by character. The function then counts the number of
+characters that match at the same position in both phrases and stores the count in the global
+variable `CorrectCounter`
+:param Phrase2: It looks like you have defined a function called `Checker` that takes two parameters
+`Phrase1` and `Phrase2`. The function compares the characters at each index of `Phrase1` and
+`Phrase2`, and increments a global variable `CorrectCounter` if the characters match
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="__main_8py_source_1l00232">232</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1a45dc92198c91285a47318d604e536768"/><section>
+    <title>ChooseDifficulty()</title>
+<indexterm><primary>ChooseDifficulty</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>ChooseDifficulty</secondary></indexterm>
+<para><computeroutput>Main.ChooseDifficulty ( )</computeroutput></para>
+<para><literallayout><computeroutput>The function ChooseDifficulty allows the user to select a desired difficulty level (Beginner,
+Intermediate, Expert) for a game.
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="__main_8py_source_1l00269">269</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1a90e0a9375c99e2b6358a9719e0d98564"/><section>
+    <title>Login()</title>
+<indexterm><primary>Login</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>Login</secondary></indexterm>
+<para><computeroutput>Main.Login ( )</computeroutput></para>
+<para><literallayout><computeroutput>The `Login` function prompts the user to enter a username, creates a directory for the user, and
+handles login success or failure.
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="__main_8py_source_1l00159">159</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1a5208611bd9857e271f1f29adfaf6d486"/><section>
+    <title>LoginSignupChoise()</title>
+<indexterm><primary>LoginSignupChoise</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>LoginSignupChoise</secondary></indexterm>
+<para><computeroutput>Main.LoginSignupChoise ( )</computeroutput></para>
+<para><literallayout><computeroutput>The function `LoginSignupChoise` prompts the user to choose between logging in or signing up and
+then calls the respective functions based on the user&apos;s choice.
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="__main_8py_source_1l00177">177</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1abb8688485662cdab50dd3a21be5bd011"/><section>
+    <title>MakeStartUserDir()</title>
+<indexterm><primary>MakeStartUserDir</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>MakeStartUserDir</secondary></indexterm>
+<para><computeroutput>Main.MakeStartUserDir ( )</computeroutput></para>
+<para><literallayout><computeroutput>The function attempts to create a Users folder if it does not already exist.
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="__main_8py_source_1l00137">137</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1a1d01b0f3654eb2b5a68c9f9ebc30a76f"/><section>
+    <title>PhraseSplit()</title>
+<indexterm><primary>PhraseSplit</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>PhraseSplit</secondary></indexterm>
+<para><computeroutput>Main.PhraseSplit ( SplittingPhrase,  List)</computeroutput></para>
+<para><literallayout><computeroutput>The function `PhraseSplit` takes a phrase and appends each letter to a given list.
+
+:param SplittingPhrase: The `SplittingPhrase` parameter is the phrase or string that you want to
+split into individual letters
+:param List: The `List` parameter in the `PhraseSplit` function is a list that will store the
+individual letters of the `SplittingPhrase` after splitting
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="__main_8py_source_1l00109">109</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1acdc63151e37b23f383d2cdaee1224915"/><section>
+    <title>SetTime()</title>
+<indexterm><primary>SetTime</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>SetTime</secondary></indexterm>
+<para><computeroutput>Main.SetTime ( StartTime,  EndTime)</computeroutput></para>
+<para><literallayout><computeroutput>The function SetTime calculates the difference in time between a start time and an end time.
+
+:param StartTime: The `StartTime` parameter represents the starting time, typically in a numerical
+format such as a timestamp or a numerical value representing a specific time
+:param EndTime: The `EndTime` parameter represents the time at which a particular event or process
+ends. It could be a specific point in time, such as the end of a task or the completion of an
+activity
+:return: The function `SetTime` returns the difference between `EndTime` and `StartTime` as an
+integer.
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="__main_8py_source_1l00193">193</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1a1cb922774e428172dfd6fdc29f151ea1"/><section>
+    <title>SignUp()</title>
+<indexterm><primary>SignUp</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>SignUp</secondary></indexterm>
+<para><computeroutput>Main.SignUp ( )</computeroutput></para>
+<para><literallayout><computeroutput>The function `SignUp` prompts the user to enter a username, creates a directory with that username,
+and handles cases where the username already exists.
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="__main_8py_source_1l00146">146</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1aad33940e3c3aecc747de02d073e8ef90"/><section>
+    <title>TimerEnd()</title>
+<indexterm><primary>TimerEnd</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>TimerEnd</secondary></indexterm>
+<para><computeroutput>Main.TimerEnd ( )</computeroutput></para>
+<para><literallayout><computeroutput>The function `TimerEnd` returns the current time when called.
+:return: The function `TimerEnd()` is returning the current time when it is called using
+`time.time()`.
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="__main_8py_source_1l00129">129</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1ade6a1244786f64f5339dc08d360b4656"/><section>
+    <title>TimerStart()</title>
+<indexterm><primary>TimerStart</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>TimerStart</secondary></indexterm>
+<para><computeroutput>Main.TimerStart ( )</computeroutput></para>
+<para><literallayout><computeroutput>The function `TimerStart()` returns the current time when called.
+:return: The `TimerStart()` function is returning the current time when it is called using
+`time.time()`.
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="__main_8py_source_1l00121">121</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1a30424fcb6e4b7f7c1d17d854078fc7d1"/><section>
+    <title>WriteTime()</title>
+<indexterm><primary>WriteTime</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>WriteTime</secondary></indexterm>
+<para><computeroutput>Main.WriteTime ( time,  accuracy,  difficulty)</computeroutput></para>
+<para><literallayout><computeroutput>The function `WriteTime` writes time-related data to a text file in a specified directory.
+
+:param time: The `time` parameter in the `WriteTime` function represents the amount of time taken to
+complete a task or activity, typically measured in seconds
+:param accuracy: Accuracy refers to how close a measured value is to the true value. It is often
+expressed as a percentage and indicates the precision of the measurement. In the context of the
+`WriteTime` function you provided, accuracy would likely refer to the precision or correctness of
+the time measurement or task completion
+:param difficulty: The `WriteTime` function you provided seems to be writing some information to a
+text file. However, it seems like you haven&apos;t defined `CurrentUser`, `CurrentDate`, and
+`CurrentTime` in the function. You will need to pass these variables as arguments to the function or
+define them within
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="__main_8py_source_1l00208">208</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespace_main_1afdeb3521e270ae29c9d7a67f1e8d8691"/><section>
+    <title>CreateUserDir</title>
+<indexterm><primary>CreateUserDir</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>CreateUserDir</secondary></indexterm>
+<para><computeroutput>Main.CreateUserDir = os.path.join(<link linkend="_namespace_main_1a130601c3bd8356a1a32d413cd468a2c7">CurrentDirectory</link>, &quot;Users&quot;)</computeroutput></para><para>
+Definition at line <link linkend="__main_8py_source_1l00016">16</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1a4e23762ea59613a42985604a0cedbd86"/><section>
+    <title>CurrentDate</title>
+<indexterm><primary>CurrentDate</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>CurrentDate</secondary></indexterm>
+<para><computeroutput>Main.CurrentDate = str(now.strftime(&quot;%d-%m-%Y&quot;))</computeroutput></para><para>
+Definition at line <link linkend="__main_8py_source_1l00012">12</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1a130601c3bd8356a1a32d413cd468a2c7"/><section>
+    <title>CurrentDirectory</title>
+<indexterm><primary>CurrentDirectory</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>CurrentDirectory</secondary></indexterm>
+<para><computeroutput>Main.CurrentDirectory = os.getcwd()</computeroutput></para><para>
+Definition at line <link linkend="__main_8py_source_1l00015">15</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1a8689c769cd84287a04dc7c8d27774f9e"/><section>
+    <title>CurrentTime</title>
+<indexterm><primary>CurrentTime</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>CurrentTime</secondary></indexterm>
+<para><computeroutput>Main.CurrentTime = str(now.strftime(&quot;%H.%M&quot;))</computeroutput></para><para>
+Definition at line <link linkend="__main_8py_source_1l00013">13</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1ae47844a282521a252f4a2b31eb88e52c"/><section>
+    <title>MainPhraseSplitted</title>
+<indexterm><primary>MainPhraseSplitted</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>MainPhraseSplitted</secondary></indexterm>
+<para><computeroutput>list Main.MainPhraseSplitted = []</computeroutput></para><para>
+Definition at line <link linkend="__main_8py_source_1l00021">21</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1afb87e9c2cd127261c128cd6522c8613c"/><section>
+    <title>now</title>
+<indexterm><primary>now</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>now</secondary></indexterm>
+<para><computeroutput>Main.now = datetime.datetime.now()</computeroutput></para><para>
+Definition at line <link linkend="__main_8py_source_1l00011">11</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1ad2eac4f47d5a5b9d2402584bc7291c4e"/><section>
+    <title>OSUserDirectory</title>
+<indexterm><primary>OSUserDirectory</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>OSUserDirectory</secondary></indexterm>
+<para><computeroutput>Main.OSUserDirectory = os.path.join(<link linkend="_namespace_main_1aadca5f678e366137bdf1fedbb6cc58ad">UsersDirectory</link>)</computeroutput></para><para>
+Definition at line <link linkend="__main_8py_source_1l00018">18</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1ac8f9d70642442b220e9d42af4be6268d"/><section>
+    <title>TestPhraseType</title>
+<indexterm><primary>TestPhraseType</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>TestPhraseType</secondary></indexterm>
+<para><computeroutput>Main.TestPhraseType = <link linkend="_namespacephrases_1aad150bc2274f15b5d6f1663eb20a40a7">TestPhrase</link>[randint(0,len(<link linkend="_namespacephrases_1aad150bc2274f15b5d6f1663eb20a40a7">TestPhrase</link>)-1)]</computeroutput></para><para>
+Definition at line <link linkend="__main_8py_source_1l00020">20</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1a754949a4060496aabeadc57c09b5bef5"/><section>
+    <title>UserPhraseSplitted</title>
+<indexterm><primary>UserPhraseSplitted</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>UserPhraseSplitted</secondary></indexterm>
+<para><computeroutput>list Main.UserPhraseSplitted = []</computeroutput></para><para>
+Definition at line <link linkend="__main_8py_source_1l00022">22</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+<anchor xml:id="_namespace_main_1aadca5f678e366137bdf1fedbb6cc58ad"/><section>
+    <title>UsersDirectory</title>
+<indexterm><primary>UsersDirectory</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>UsersDirectory</secondary></indexterm>
+<para><computeroutput>str Main.UsersDirectory = f&quot;{<link linkend="_namespace_main_1a130601c3bd8356a1a32d413cd468a2c7">CurrentDirectory</link>}/Users&quot;</computeroutput></para><para>
+Definition at line <link linkend="__main_8py_source_1l00017">17</link> of file <link linkend="__main_8py_source">Main.py</link>.</para>
+</section>
+</section>
+</section>

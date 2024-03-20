@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="db/d09/namespacephrases" kind="namespace" language="Python">
+    <compoundname>phrases</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="db/d09/namespacephrases_1aad150bc2274f15b5d6f1663eb20a40a7" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list phrases.TestPhrase</definition>
+        <argsstring></argsstring>
+        <name>TestPhrase</name>
+        <qualifiedname>phrases.TestPhrase</qualifiedname>
+        <initializer>=  [
+    &quot;Jeg er en taberabe&quot;,
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="phrases.py" line="1" column="1" bodyfile="phrases.py" bodystart="1" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d09/namespacephrases_1aa1e4f49ba414f7521697b3c5e357a9f5" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list phrases.BeginnerPhrase</definition>
+        <argsstring></argsstring>
+        <name>BeginnerPhrase</name>
+        <qualifiedname>phrases.BeginnerPhrase</qualifiedname>
+        <initializer>=  [
+    &quot;BegTest&quot;
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="phrases.py" line="5" column="1" bodyfile="phrases.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d09/namespacephrases_1aed96c55bca7e26da0b6615c98b081203" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list phrases.IntiermidiatePhrase</definition>
+        <argsstring></argsstring>
+        <name>IntiermidiatePhrase</name>
+        <qualifiedname>phrases.IntiermidiatePhrase</qualifiedname>
+        <initializer>=  [
+    &quot;InterTest&quot;
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="phrases.py" line="9" column="1" bodyfile="phrases.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d09/namespacephrases_1ad7a9c84b340b3d9a1a444165994d12fd" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list phrases.ExpertPhrase</definition>
+        <argsstring></argsstring>
+        <name>ExpertPhrase</name>
+        <qualifiedname>phrases.ExpertPhrase</qualifiedname>
+        <initializer>=  [
+    &quot;ExpTest&quot;
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="phrases.py" line="13" column="1" bodyfile="phrases.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="phrases.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>
