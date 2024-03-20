@@ -4,6 +4,7 @@ TestPhrase = [
 
 BeginnerPhrase = [
     "BegTest"
+    "Meh"
 ]
 
 IntiermidiatePhrase = [
