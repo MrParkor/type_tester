@@ -195,4 +195,5 @@ def ChooseDifficulty():
         print("didn't understand: Please try again")
         ChooseDifficulty()
 
-ChooseDifficulty()
+if __name__ == "__main__":
+    ChooseDifficulty()
